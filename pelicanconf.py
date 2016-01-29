@@ -31,8 +31,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('ThreeBook', 'http://threebook.cn'),)
 
 # Social widget
-#SOCIAL = (('You can add links in your config file', '#'),
-#          ('Another social link', '#'),)
+SOCIAL = (('Link1', '#'),
+          ('link2', '#'),)
 
 DEFAULT_PAGINATION = 10
 MD_EXTENSIONS = [
@@ -50,7 +50,10 @@ MD_EXTENSIONS = [
 CNZZ_ANALYTICS = True
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
-THEME = "themes/new-bootstrap2"
+
+# Theme
+#THEME = "themes/new-bootstrap2"
+THEME = "themes/foundation-default-colours"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
