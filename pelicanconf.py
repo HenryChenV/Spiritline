@@ -25,14 +25,23 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('ThreeBook', 'http://threebook.cn'),)
+LINKS = (
+    ('Github', 'https://github.com/HenryChenV'),
+    ('ThreeBook', 'http://threebook.cn'),
+)
 
 # Social widget
-SOCIAL = (('Link1', '#'),
-          ('link2', '#'),)
+SOCIAL = (
+    ('Weibo', 'http://weibo.com/dulihandong'),
+)
+
+# ABOUT ME, not used
+ABOUTME = (
+    ('Email', 'chen_hanli@163.com'),
+    ('QQ', '648667940'),
+)
+
+FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
 
 DEFAULT_PAGINATION = 10
 MD_EXTENSIONS = [
