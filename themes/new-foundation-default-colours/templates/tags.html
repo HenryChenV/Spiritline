@@ -3,7 +3,7 @@
 {% block title %}{{ SITENAME }} <small>[tags]</small>{% endblock %}
 
 {% block content %}
-	<ul>
+<ul {#class="tag-cloud"#}>
 	{% for tag, articles in tags %}
 		<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
 	{% endfor %}
