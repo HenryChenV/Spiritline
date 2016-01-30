@@ -4,7 +4,7 @@ Modified: 2016-01-30 01:53
 Tags: centos7, nginx, uwsgi, mysql, python
 Slug: note-for-build-website
 Authors: Henry Chen
-Summary: 搭建论坛的简单记录
+Summary: 搭建论坛的简单记录,搭了个论坛玩。以下文字时写给自己看的，首要目的是记录，其次才是得瑟。会有些啰嗦，因为不想写那种从头到位都很顺利跟说明书似的帖子。
 Status: published
 
 [TOC]
