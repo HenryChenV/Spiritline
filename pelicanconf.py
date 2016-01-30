@@ -12,7 +12,7 @@ PATH = 'content'
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = u'zh_CN'
-DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M:%S')
+DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M')
 
 USE_FOLDER_AS_CATEGORY = True
 DEFAULT_CATEGORY = 'hide'
@@ -53,7 +53,8 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Theme
 #THEME = "themes/new-bootstrap2"
-THEME = "themes/foundation-default-colours"
+THEME = "themes/new-foundation-default-colours"
+#THEME = "themes/notmyidea"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
