@@ -53,7 +53,8 @@ MD_EXTENSIONS = [
     "smarty",
     "wikilinks",
     "admonition",
-    "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
+#    "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
+    'codehilite(css_class=highlight,linenums=False)',
 ]
 
 CNZZ_ANALYTICS = True
@@ -67,3 +68,7 @@ THEME = "themes/new-foundation-default-colours"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Plugins
+PLUGIN_PATHS = ["plugins", ]
+PLUGINS = ["better_codeblock_line_numbering"]
