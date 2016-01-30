@@ -28,6 +28,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ('Github', 'https://github.com/HenryChenV'),
     ('ThreeBook', 'http://threebook.cn'),
+    ('Markdown Syntax', 'http://wowubuntu.com/markdown/'),
 )
 
 # Social widget
