@@ -2,7 +2,7 @@ Title: 一月的混沌
 Date: 2016-01-02 12:12
 Modified: 2015-01-02 12:12
 Tags: chaos, life, thinking
-Slug: this-is-a-template
+Slug: january-chaos
 Authors: Henry Chen
 Summary: 每年每月总有那么几天烦烦烦，这次我写了下来
 Status: published
