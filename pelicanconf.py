@@ -7,7 +7,7 @@ SITENAME = u'SpiritLine'
 SITEURL = 'http://localhost:8000'
 DISQUS_SITENAME = "spiritline"
 
-PATH = 'content'
+#PATH = 'content'
 
 TIMEZONE = 'Asia/Shanghai'
 
@@ -28,7 +28,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ('Github', 'https://github.com/HenryChenV'),
     ('ThreeBook', 'http://threebook.cn'),
-    ('Markdown Syntax', 'http://wowubuntu.com/markdown/'),
+    ('Markdown Syntax', 'http://markdown-zh.readthedocs.org/en/latest/'),
 )
 
 # Social widget
@@ -73,3 +73,6 @@ THEME = "themes/new-foundation-default-colours"
 # Plugins
 PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["better_codeblock_line_numbering"]
+
+# Static Files
+STATIC_PATHS = ['images']
