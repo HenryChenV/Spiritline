@@ -1,5 +1,5 @@
 Title: 一月的混沌
-Date: 2016-02-02 12:12
+Date: 2016-01-02 12:12
 Modified: 2015-01-02 12:12
 Tags: chaos, life, thinking
 Slug: january-chaos
