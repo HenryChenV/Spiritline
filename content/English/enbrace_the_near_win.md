@@ -4,7 +4,6 @@ Modified: 2016-01-30 02:00
 Tags: TED, English
 Slug: ted-embrace-the-near-win
 Authors: Henry Chen
-Summary: Embrace the near win
 Status: published
 
 I feel so fortunate that my first job was working at the Museum of Modern Art on a retrospective of painter Elizabeth Murray. I learned so much from her. After the curator Robert Storr selected all the paintings from her lifetime body of work, I loved looking at the paintings from the 1970s. There were some motifs and elements that would come up again later in her life. I remember asking her what she thought of those early works. If you didn't know they were hers, you might not have been able to guess.She told me that a few didn't quite meet her own mark for what she wanted them to be. One of the works, in fact, so didn't meet her mark, she had set it out in the trash in her studio, and her neighbor had taken it because she saw its value.

@@ -4,7 +4,6 @@ Modified: 2015-01-02 12:12
 Tags: chaos, life, thinking
 Slug: january-chaos
 Authors: Henry Chen
-Summary: 每年每月总有那么几天烦烦烦，这次我写了下来
 Status: published
 
 [TOC]

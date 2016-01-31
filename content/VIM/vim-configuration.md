@@ -4,7 +4,6 @@ Modified: 2016-01-31 14:46
 Tags: vim, theme
 Slug: vim-configuration
 Authors: Henry Chen
-Summary: vim配置笔记
 Status: published
 
 [TOC]
