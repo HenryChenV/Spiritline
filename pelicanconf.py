@@ -12,7 +12,8 @@ DISQUS_SITENAME = "spiritline"
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = u'zh_CN'
-DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M')
+#DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M')
+DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
 
 USE_FOLDER_AS_CATEGORY = True
 DEFAULT_CATEGORY = 'hide'
@@ -45,7 +46,7 @@ ABOUTME = (
 
 FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 MD_EXTENSIONS = [
     "extra",
     "toc",
@@ -65,9 +66,8 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Theme
 #THEME = "themes/new-bootstrap2"
-#THEME = "themes/bootstrap2"
 THEME = "themes/new-foundation-default-colours"
-#THEME = "themes/notmyidea"
+#THEME = "themes/pelican-bootstrap3"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -78,3 +78,6 @@ PLUGINS = ["better_codeblock_line_numbering"]
 
 # Static Files
 STATIC_PATHS = ['images']
+
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
