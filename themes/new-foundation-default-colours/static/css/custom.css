@@ -137,3 +137,7 @@ table.highlighttable {
 	margin: 0.55rem 0.5rem 0 0;
 	padding: 0;
 }
+
+.side-nav-2 {
+  list-style-type: none;
+}
