@@ -29,6 +29,7 @@ LINKS = (
     ('Github', 'https://github.com/HenryChenV'),
     ('ThreeBook', 'http://threebook.cn'),
     ('Markdown Syntax', 'http://markdown-zh.readthedocs.org/en/latest/'),
+    ('Pelican 中文文档', 'http://pelican-docs-zh-cn.readthedocs.org/en/latest/'),
 )
 
 # Social widget
@@ -64,6 +65,7 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Theme
 #THEME = "themes/new-bootstrap2"
+#THEME = "themes/bootstrap2"
 THEME = "themes/new-foundation-default-colours"
 #THEME = "themes/notmyidea"
 

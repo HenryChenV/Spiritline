@@ -156,7 +156,7 @@
 
 							{% if MONTH_ARCHIVE_SAVE_AS %}
 							<div class="panel">
-								<h5>Monthly Archives</h5>
+                                <a href="{{ SITEURL }}/archives.html"><h5>Monthly Archives</h5></a>
 								<ul class="side-nav">
 									{% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
 										{% for month, articles in date_year|groupby( 'date.month' )|sort(reverse=True) %}
