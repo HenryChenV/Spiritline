@@ -65,8 +65,8 @@ YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Theme
-#THEME = "themes/new-foundation-default-colours"
-THEME = "themes/pelican-bootstrap3"
+THEME = "themes/new-foundation-default-colours"
+#THEME = "themes/pelican-bootstrap3"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
