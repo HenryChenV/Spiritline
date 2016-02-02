@@ -7,22 +7,16 @@
 <article>
     <h3><a href="{{ SITEURL }}/{{ article.url }}"><b>{{ article.title }}</b></a></h3>
     <h6>
-        <b>Published: </b> {{ article.locale_date }}.
-    {#
-    </h6> 
-    <h6>
-    #}
-        <b>Updated&nbsp;&nbsp;:</b> {{ article.locale_modified }}.
-    </h6> 
-    <h6>
-        <b>Author: </b> 
+        <b>Written by </b>
         <a href="{{ SITEURL }}/author/{{ article.author|lower|replace(' ', '-') }}.html">
             {{ article.author }}
         </a>
-    </h6>
+        <b>On </b>
+        {{ article.locale_date }}
+    </h6> 
     <h6> 
         {% if article.category %} 
-        <b>Category: </b> 
+        <b>In </b> 
         <a href="{{ SITEURL }}/{{ article.category.url }}">
             {{ article.category}}
         </a> 
