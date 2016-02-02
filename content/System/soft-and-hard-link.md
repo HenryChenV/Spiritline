@@ -142,7 +142,7 @@ Fragment size=1024 (log=0)
 + 可以对文件或目录创建
 + 删除soft link 不影响原文件，删除原文件soft link会变成死链
 
-![链接访问](/images/sysops/visit-soft-link.jpg)
+![链接访问](/images/sysops/visit-soft-link.jpg 链接访问)
 
 
 ### 使用命令 find 查找软链接与硬链接
