@@ -38,14 +38,6 @@ SOCIAL = (
     ('Weibo', 'http://weibo.com/dulihandong'),
 )
 
-# ABOUT ME, not used
-ABOUTME = (
-    ('Email', 'chen_hanli@163.com'),
-    ('QQ', '648667940'),
-)
-
-FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
-
 DEFAULT_PAGINATION = 5
 MD_EXTENSIONS = [
     "extra",
@@ -66,7 +58,6 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Theme
 THEME = "themes/new-foundation-default-colours"
-#THEME = "themes/pelican-bootstrap3"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -78,57 +69,35 @@ PLUGINS = ["better_codeblock_line_numbering", ]
 # Static Files
 STATIC_PATHS = ['images']
 
-DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_ON_SIDEBAR = False
 DISPLAY_TAGS_INLINE = True
 DISPLAY_BREADCRUMBS = True
 SUMMARY_MAX_LENGTH = 15
 
-###################### for theme plumage #########################
-#LEFT_SIDEBAR = "left sidebar"
-#MENUITEMS = (
-#    ("item1", "#"),
-#    ("item2", "#"),
-#)
-#SITESUBTITLE = "site subtitle"
-#TIPUE_SEARCH = True
-###################### end #######################################
+# configurations of foundation-default-colours
+# the front page will show full articles instead of summaries + links to the
+# full articles
+FOUNDATION_FRONT_PAGE_FULL_ARTICLES = False
+# Google Droid fonts will be used instead of the default Open Sans font that
+# ships with Foundation
+FOUNDATION_ALTERNATE_FONTS = True
+# a tag list will appear in the mobile sidebar. However note that if you have a
+# lot of tags, this list may get rather long and unweildly
+FOUNDATION_TAGS_IN_MOBILE_SIDEBAR = False
+# If you wish to use the newer Google Analytics embed code, enable
+# FOUNDATION_NEW_ANALYTICS and set the FOUNDATION_ANALYTICS_DOMAIN to the
+# Google-Analytics-supplied name for your code block
+FOUNDATION_NEW_ANALYTICS = False
+FOUNDATION_ANALYTICS_DOMAIN = ''
+# change the footer text
+FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
+# themes that Pygments provides
+FOUNDATION_PYGMENT_THEME = 'monokai'
 
 
-###################### SIDEBAR = "sidebar.html" #########################
-#SITESUBTITLE ='Sub-title that goes underneath site name in jumbotron.'
-#SITETAG = "Text that's displayed in the title on the home page."
-
-# Extra stylesheets, for bootstrap overrides or additional styling.
-#STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
-
-# Put taglist at end of articles, and use the default
-# sharing button implementation.
-#CUSTOM_ARTICLE_FOOTERS = ("taglist.html", "sharing.html", )
-#CUSTOM_SCRIPTS_ARTICLE = "sharing_scripts.html"
-
-# Default sidebar template. Omit
-# this setting for single column
-# mode without sidebar.
-#SIDEBAR = "sidebar.html"
-#########################################################################
-
-########################## for theme chameleon ###########################
-#AUTHORS = {
-#    u'jack': '/about.html',
-#    u'mary': 'http://mary.info',
-#    u'tony': 'http://tony.me',
-#}
-#MENUITEMS = [
-#    ('Home', '/'),
-#    ('Archives', [
-#        ('Tags', '/tags.html'),
-#        ('Categories', '/categories.html'),
-#        ('Chronological', '/archives.html'),
-#    ]),
-#    ('Social', [
-#        ('Email', 'mailto: maurelinus@stoic.edu'),
-#        ('Github', 'http://url-to-github-page'),
-#        ('Facebook', 'http://url-to-facebook-page'),
-#    ]),
-#]
-#########################################################################
+# custom
+# ABOUT ME, not used
+ABOUTME = (
+    ('Email', 'chen_hanli@163.com'),
+    ('QQ', '648667940'),
+)
