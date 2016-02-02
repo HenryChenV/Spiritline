@@ -92,6 +92,8 @@ FOUNDATION_ANALYTICS_DOMAIN = ''
 # change the footer text
 FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
 # themes that Pygments provides
+# autumn borland bw colorful default emacs friendly fruity manny monokai
+# murphy native pastie perldoc tango trac vs
 FOUNDATION_PYGMENT_THEME = 'monokai'
 
 
@@ -104,7 +106,7 @@ ABOUTME = (
 
 # tag cloud
 # Count of different font sizes in the tag cloud
-TAG_CLOUD_STEPS = 3
+TAG_CLOUD_STEPS = 4
 # Maximum number of tags in the cloud
 TAG_CLOUD_MAX_ITEMS = 100
 # The tag cloud ordering scheme.

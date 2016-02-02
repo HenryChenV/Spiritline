@@ -1,7 +1,7 @@
 Title: vim配置
 Date: 2016-01-31 14:46
 Modified: 2016-01-31 14:46
-Tags: vim, theme
+Tags: vim, theme, fun
 Slug: vim-configuration
 Authors: Henry Chen
 Status: published
