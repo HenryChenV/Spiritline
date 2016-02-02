@@ -141,3 +141,11 @@ table.highlighttable {
 .side-nav-2 {
   list-style-type: none;
 }
+
+.all_tags {
+  font-size: 130%;
+}
+
+.all_tags li {
+  display: list-item;
+}
