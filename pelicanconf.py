@@ -64,7 +64,7 @@ THEME = "themes/new-foundation-default-colours"
 
 # Plugins
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["better_codeblock_line_numbering", ]
+PLUGINS = ["better_codeblock_line_numbering", "tag_cloud"]
 
 # Static Files
 STATIC_PATHS = ['images']
@@ -101,3 +101,15 @@ ABOUTME = (
     ('Email', 'chen_hanli@163.com'),
     ('QQ', '648667940'),
 )
+
+# tag cloud
+# Count of different font sizes in the tag cloud
+TAG_CLOUD_STEPS = 3
+# Maximum number of tags in the cloud
+TAG_CLOUD_MAX_ITEMS = 100
+# The tag cloud ordering scheme.
+# Valid values: random, alphabetically, alphabetically-rev, size and size-rev
+TAG_CLOUD_SORTING = "random"
+# Optionnal setting : can bring **badges**,
+# which mean say : display the number of each tags present on all articles
+TAG_CLOUD_BADGE = True
