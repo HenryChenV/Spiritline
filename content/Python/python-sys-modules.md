@@ -67,4 +67,4 @@ import constant
 
 原因在于, __name__表示的是这个module的名称，可能是__main__或者文件名去掉后缀(这点不展开), sys.modules是一个已知模块的模块名称到模块的映射，如果要找的模块的名称在sys.modules中，那么回按照sys.modules去找，否则sys.path中找，在constant.py中用sys.modules[module_name] = module 的方式改变了constant.py这个模块的指向，在constant.py中再次import constant时，因为constant这个名称在sys.modules中已有，所以会按照sys.modules的映射找出这个模块，而在import 前已经将指向改成了_const()，所以再次import 后，constant就等同于_const()了。
 
-个人觉得这个用法笔记有趣，特此记录，无他意。
+个人觉得这个用法比较有趣，特此记录，无他意。
