@@ -2,3 +2,4 @@
 run/*.pid
 run/run_soft
 output/*
+.ropeproject/
