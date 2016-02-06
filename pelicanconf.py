@@ -55,6 +55,7 @@ MD_EXTENSIONS = [
 CNZZ_ANALYTICS = True
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/index.html'
 
 # Theme
 THEME = "themes/new-foundation-default-colours"

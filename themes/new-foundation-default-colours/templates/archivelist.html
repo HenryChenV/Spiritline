@@ -2,17 +2,24 @@
 	<div class="small-10 columns small-centered">
 		{% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}
 			<div class="row archive-year">
-				<div class="small-2 columns text-right">
+				<div class="small-2 columns text-left">
           <a href="/{{ YEAR_ARCHIVE_SAVE_AS.format(date=articles[0].date) }}">
             <h3>{{ year }}</h3>
           </a>
 				</div>
 			</div>
 			{% for month, articles in date_year|groupby('date.month') %}
-				{% for article in articles %}
+      <div class="row archive-month ">
+        <div class="small-2 columns text-right">
+          <a href="/{{ MONTH_ARCHIVE_SAVE_AS.format(date=articles[0].date) }}">
+            <h5><b>{{ articles[0].date.strftime('%B') }}</b></h5>
+          </a>
+        </div>
+      </div>
+				{% for article in articles|sort(attribute='date', reverse=False) %}
 				<div class="row archive-entry">
 					<div class="small-2 columns text-right">
-            <a href="/{{ MONTH_ARCHIVE_SAVE_AS.format(date=articles[0].date) }}">
+            <a href="/{{ DAY_ARCHIVE_SAVE_AS.format(date=articles[0].date) }}">
               <h5>{{ article.date.strftime('%b %d') }}</h5>
             </a>
 					</div>
