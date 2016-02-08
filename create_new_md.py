@@ -43,13 +43,16 @@ def create_new_md(filename, date, author, status):
         while 1:
             if choice in ('y', 'yes'):
                 generate_new_md(filename, date, author, status)
-                print 'success, %s was created' % filename
+                print 'success, %s was overwrited by new file.' % filename
                 break
             elif choice in ('', 'n', 'no'):
                 print 'new file was not created because %s was existed.' % filename
                 break
             else:
                 choice = raw_input('choise must in ("y", "n"): ')
+    else:
+        generate_new_md(filename, date, author, status)
+        print 'success, %s was created' % filename
 
 
 
