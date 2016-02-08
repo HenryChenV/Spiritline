@@ -16,7 +16,8 @@ DEFAULT_LANG = u'zh_CN'
 DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
 
 USE_FOLDER_AS_CATEGORY = True
-DEFAULT_CATEGORY = 'hide'
+DEFAULT_CATEGORY = 'Essay'
+IGNORE_FILES = ['template.md']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
