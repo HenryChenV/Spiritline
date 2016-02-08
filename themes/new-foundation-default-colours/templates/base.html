@@ -146,6 +146,17 @@
 						<!-- Sidebar -->
 						<aside class="medium-3 hide-for-small-only columns">
 							<div class="panel">
+								<h5>Intro</h5>
+								<ul class="side-nav">
+                                    {% for intro in INTROS %}
+                                    <li>
+                                        <a href="#">{{ intro }}</a>
+                                    </li>
+                                    {% endfor %}
+								</ul>
+							</div>
+
+							<div class="panel">
                                 <a href="{{ SITEURL }}/tags.html"><h5>Tags</h5></a>
 								<ul class="tag-cloud">
 									{% for tag in tag_cloud %}

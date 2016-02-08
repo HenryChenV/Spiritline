@@ -105,6 +105,9 @@ ABOUTME = (
     ('Email', 'chen_hanli@163.com'),
     ('QQ', '648667940'),
 )
+INTROS = (
+    "This is the story of me.",
+)
 
 # tag cloud
 # Count of different font sizes in the tag cloud
