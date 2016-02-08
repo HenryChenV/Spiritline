@@ -56,3 +56,5 @@ Status: published
 4. tags页面样式修改，等tag足够多再说吧。  
 
 5. pelican将md转成markdown的时候，对有序列表没做转换，不知道怎么搞的
+
+6. 加回到顶部功能
