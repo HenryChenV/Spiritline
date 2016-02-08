@@ -106,7 +106,7 @@ ABOUTME = (
     ('QQ', '648667940'),
 )
 INTROS = (
-    "This is the story of me.",
+    "The Story Of Me.",
 )
 
 # tag cloud
