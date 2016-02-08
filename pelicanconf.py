@@ -92,7 +92,14 @@ FOUNDATION_TAGS_IN_MOBILE_SIDEBAR = False
 FOUNDATION_NEW_ANALYTICS = False
 FOUNDATION_ANALYTICS_DOMAIN = ''
 # change the footer text
-FOUNDATION_FOOTER_TEXT = "Contact me: Henry Chen, Email: chen_hanli@163.com, QQ: 648667940"
+FOUNDATION_FOOTER_TEXT = "".join(
+    (
+        "Contact me: Henry Chen, ",
+        "Email: <a href='mailto:chen_hanli@163.com'>chen_hanli@163.com</a>, ",
+        "QQ: 648667940",
+    )
+)
+
 # themes that Pygments provides
 # autumn borland bw colorful default emacs friendly fruity manny monokai
 # murphy native pastie perldoc tango trac vs
