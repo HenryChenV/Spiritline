@@ -49,8 +49,10 @@ MD_EXTENSIONS = [
     "smarty",
     "wikilinks",
     "admonition",
+#    "nl2br",
 #    "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
-    'codehilite(css_class=highlight,linenums=False)',
+    "codehilite(css_class=highlight,linenums=False)",
+    "mdx_del_ins",
 ]
 
 CNZZ_ANALYTICS = True
