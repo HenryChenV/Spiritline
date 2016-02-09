@@ -20,15 +20,18 @@ with expr1 as e1:
 ```
 
 with语句执行过程:  
-1.执行expr, 返回一个context manager对象  
-2.加载context manager 的 __exit__ 以后备用  
-3. 加载context manager 的 __enter__ 方法  
+
+1. 执行expr, 返回一个context manager对象  
+2. 加载context manager 的__exit__以后备用  
+3. 加载context manager 的__enter__方法  
 4. 如果设置了目标对象，则将__enter__()的返回值赋给这个对象  
 5. 执行with下面的代码块  
 6. 如果步骤5代码正常结束,调用__exit__方法,其返回值会被忽略  
 7. 如果步骤5代码发生异常,调用context manager 的__exit__方法，并传入异常类型,值和traceback， 如果__exit__()的返回值为false，异常会被重新抛出，如果为true，异常挂起，程序继续执行  
 
+
 使用with as有三种方式:  
+
 1. 使用类似于open这种会反悔context manager的方法直接获得__enter__和__exit__  
 2. 自己写一个class实现__enter__和__exit__  
 3. 使用contextlib.contextmanager装饰起装饰一个generator,比较恶心的是这个generator只能yield一个值，不能超过1个，比如很好用的那个用生成器写fibonacci,具体参考文档,再吐槽一次,好恶心  
