@@ -1,7 +1,7 @@
 Title: 软链接，硬链接
 Date: 2016-01-30 02:20
 Modified: 2016-01-31 18:57
-Tags: system, hard link, soft link, symbolic link
+Tags: system, hard-link, soft-link, symbolic-link
 Slug: soft-and-hard-link
 Authors: Henry Chen
 Summary: 从incode的角度解释软链接和硬链接的区别，联系
