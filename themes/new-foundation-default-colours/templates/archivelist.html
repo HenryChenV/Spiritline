@@ -19,7 +19,7 @@
 				{% for article in articles|sort(attribute='date', reverse=True) %}
 				<div class="row archive-entry">
 					<div class="small-2 columns text-right">
-            <a href="/{{ DAY_ARCHIVE_SAVE_AS.format(date=articles[0].date) }}">
+            <a href="/{{ DAY_ARCHIVE_SAVE_AS.format(date=article.date) }}">
               <h5>{{ article.date.strftime('%b %d') }}</h5>
             </a>
 					</div>
