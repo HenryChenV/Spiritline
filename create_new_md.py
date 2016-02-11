@@ -16,6 +16,7 @@ Modified: {date}
 Tags:
 Slug: {slug}
 Authors: {author}
+Summary:
 Status: {status}
 
 [TOC]
