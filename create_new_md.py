@@ -37,6 +37,9 @@ def generate_new_md(filename, date, author, status):
 
 
 def create_new_md(filename, date, author, status):
+    if not filename.endswith('.md'):
+        filename = '%s.md' % filename
+
     if os.path.exists(filename):
         prompt = '%s is already existed, do you want to overwrite is?[y/N] ' \
                 % filename
