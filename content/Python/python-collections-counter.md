@@ -1,7 +1,7 @@
 Title: 用Counter计数
 Date: 2016-02-11 22:37
 Modified: 2016-02-11 22:37
-Tags:
+Tags: python, collections, counter
 Slug: python-collections-counter
 Authors: Henry Chen
 Status: published
