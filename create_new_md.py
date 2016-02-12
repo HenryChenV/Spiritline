@@ -6,8 +6,8 @@ create new md file
 
 __author__ = 'Henry Chen'
 
-import sys
 import os
+import argparse
 from datetime import datetime
 
 new_md_template = '''Title:
@@ -59,23 +59,36 @@ def create_new_md(filename, date, author, status):
         print 'success, %s was created' % filename
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Create New Markdown File.")
+
+    parser.add_argument('path',
+                        metavar='path',
+                        help="path to md file")
+    parser.add_argument('-s',
+#                        metavar='--status',
+                        dest='status',
+                        default='published',
+                        choices=('draft', 'published'),
+                        help='the status of post (draft or published)')
+    parser.add_argument('--slug',
+                        dest='slug',
+                        help='the slug of post.')
+
+    args = parser.parse_args()
+    path, slug, status = args.path, args.slug, args.status
+    if not slug:
+        base_filename = os.path.basename(path)
+        if not base_filename:
+            raise ValueError, "Invalid Path."
+        slug = base_filename.rstrip('.md') if base_filename.endswith('.md') else base_filename
+
+    return path, slug, status
+
 
 if __name__ == '__main__':
-    try:
-        filename = sys.argv[1]
-    except Exception:
-        print 'Usage: %s path-to-new-md [status]' % __file__
-        sys.exit(1)
 
-    base_filename = os.path.basename(filename)
-    slug = base_filename.rstrip('.md') if base_filename.endswith('.md') else base_filename
-
+    path, slug, status = parse_args()
     now = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
 
-    status = 'published'
-    if len(sys.argv) >= 3 and sys.argv[2] in ('drafted', 'published'):
-        status = sys.argv[2]
-
-    author = __author__
-
-    create_new_md(filename, now, author, status)
+    create_new_md(path, now, __author__, status)
