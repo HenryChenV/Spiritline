@@ -1,7 +1,7 @@
 Title: 简单聊聊with ... as ...
 Date: 2016-02-08 22:58
 Modified: 2016-02-08 22:58
-Tags: python, with
+Tags: reading-notes, python, with
 Slug: python-with-as
 Authors: Henry Chen
 Status: published

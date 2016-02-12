@@ -1,7 +1,7 @@
 Title: 用Counter计数
 Date: 2016-02-11 22:37
 Modified: 2016-02-11 22:37
-Tags: python, collections, counter
+Tags: reading-notes, python, collections, counter
 Slug: python-collections-counter
 Authors: Henry Chen
 Status: published
@@ -88,4 +88,36 @@ of elements to their counts.
 >>> c = Counter('gallahad')                 # a new counter from an iterable
 >>> c = Counter({'a': 4, 'b': 2})           # a new counter from a mapping
 >>> c = Counter(a=4, b=2)                   # a new counter from keyword args
+```
+<br/>
+
+感觉标准库应该会用什么高端算法搞定这事,结果很失望  
+Counter继承了dict, 下面这段代码是对给定参数的计数,分别对上面
+``` python
+>>> c = Counter('gallahad')                 # a new counter from an iterable
+>>> c = Counter({'a': 4, 'b': 2})           # a new counter from a mapping
+>>> c = Counter(a=4, b=2)                   # a new counter from keyword args
+```
+三种情况作了处理
+``` python
+if iterable is not None:
+    if isinstance(iterable, Mapping):
+        if self:
+            self_get = self.get
+            for elem, count in iterable.iteritems():
+                self[elem] = self_get(elem, 0) + count
+        else:
+            super(Counter, self).update(iterable) # fast path when counter is empty
+    else:
+        self_get = self.get
+        for elem in iterable:
+            self[elem] = self_get(elem, 0) + 1
+if kwds:
+    self.update(kwds)
+```
+这样的话，简单情况下我完全可以直接用代码中的
+``` python
+self_get = self.get
+for elem in iterable:
+    self[elem] = self_get(elem, 0) + 1
 ```

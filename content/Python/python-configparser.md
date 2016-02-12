@@ -1,7 +1,7 @@
 Title: 用ConfigParser解析参数
 Date: 2016-02-11 23:51
 Modified: 2016-02-11 23:51
-Tags: python, configparser
+Tags: reading-notes, python, configparser
 Slug: python-configparser
 Authors: Henry Chen
 Status: published

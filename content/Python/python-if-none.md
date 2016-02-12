@@ -1,7 +1,7 @@
 Title: python中判断一个实例是否为空
 Date: 2016-02-10 19:43
 Modified: 2016-02-10 19:43
-Tags: python, build-in-function
+Tags: reading-notes, python, build-in-function
 Slug: python-if-none
 Authors: Henry Chen
 Status: published

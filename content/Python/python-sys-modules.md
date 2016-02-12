@@ -1,7 +1,7 @@
 Title: 有趣的 sys.modules
 Date: 2016-02-06 02:24
 Modified: 2016-02-08 16:47
-Tags: python, fun
+Tags: reading-notes, python, fun
 Slug: python-sys-modules
 Authors: Henry Chen
 Status: published
