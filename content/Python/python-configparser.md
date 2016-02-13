@@ -1,4 +1,4 @@
-Title: 用ConfigParser解析参数
+Title: 用ConfigParser解析配置项
 Date: 2016-02-11 23:51
 Modified: 2016-02-11 23:51
 Tags: reading-notes, python, configparser
