@@ -115,7 +115,8 @@ ABOUTME = (
     ('QQ', '648667940'),
 )
 INTROS = (
-    "The Story Of Me.",
+#    "The Story Of Me.",
+    "Talk is cheap. Show me the code.--Linus Torvalds",
 )
 
 # tag cloud
