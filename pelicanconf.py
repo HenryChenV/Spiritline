@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'henry'
-SITENAME = u'SpiritLine'
+SITENAME = u"Henry's SpiritLine"
 SITEURL = 'http://localhost:8000'
 DISQUS_SITENAME = "spiritline"
 
