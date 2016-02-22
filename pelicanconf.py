@@ -68,7 +68,13 @@ THEME = "themes/new-foundation-default-colours"
 
 # Plugins
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["better_codeblock_line_numbering", "tag_cloud"]
+PLUGINS = ["better_codeblock_line_numbering", "tag_cloud", "sitemap"]
+
+# plugin sitemap
+SITEMAP = {
+    'format': 'xml',
+    'exclude': ['tag/', 'category/'],
+}
 
 # Static Files
 STATIC_PATHS = ['images']
