@@ -71,8 +71,19 @@ PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["better_codeblock_line_numbering", "tag_cloud", "sitemap"]
 
 # plugin sitemap
+# https://github.com/getpelican/pelican-plugins/tree/master/sitemap
 SITEMAP = {
     'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'daily'
+    },
     'exclude': ['tag/', 'category/'],
 }
 
