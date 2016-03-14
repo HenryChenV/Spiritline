@@ -84,7 +84,8 @@ if __name__ == '__main__':
     print ms2, id(ms2)
 ```
 结果:
-```bash
+
+``` bash
 $ python mysingleton.py 
 -------------------------
 None
@@ -94,7 +95,7 @@ init mc
 instance was already existed.
 <__main__.MySingleton object at 0x1052b9490> 4381709456
 <__main__.MySingleton object at 0x1052b9490> 4381709456
-````
+```
 
 
 ### 利用 __metaclass__ 和 __new__
