@@ -43,3 +43,7 @@ descriptor）是计算机科学中的一个术语，是一个用于表述指向�
 ### 协程 gevent
 
 [gevent 廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
+
+
+### HTTP multipart/form-data
+[HTTP协议之multipart/form-data请求分析](http://blog.csdn.net/five3/article/details/7181521)
