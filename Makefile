@@ -126,7 +126,7 @@ github: publish
 #	git remote add origin git@github.com:HenryChenV/henrychenv.github.io.git
 	git add --all
 	git commit -m "published from SpiritLine"
-	git push origin master
+	git push -f origin master
 	mv .git /tmp/
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
