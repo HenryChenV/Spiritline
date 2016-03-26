@@ -79,6 +79,11 @@
 							<li><a href="{{ link }}">{{ name }}</a></li>
 							{% endfor %}
 
+						<li><label>Whiz Libiary</label></li>
+							{% for name, link in WHIZ_LIB %}
+							<li><a href="{{ link }}">{{ name }}</a></li>
+							{% endfor %}
+
 						{% if FOUNDATION_TAGS_IN_MOBILE_SIDEBAR %}
 						<li><label>Tags</label></li>
 							{% for tag, articles in tags|sort %}
@@ -202,9 +207,9 @@
 							{% endif %}
 
 							<div class="panel">
-								<h5>Social</h5>
+								<h5>Whiz Libiary</h5>
 								<ul class="side-nav">
-									{% for name, link in SOCIAL|sort %}
+									{% for name, link in WHIZ_LIB %}
 									<li><a href="{{ link }}">{{ name }}</a></li>
 									{% endfor %}
 								</ul>
@@ -214,6 +219,15 @@
 								<h5>Links</h5>
 								<ul class="side-nav">
 									{% for name, link in LINKS %}
+									<li><a href="{{ link }}">{{ name }}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									{% for name, link in SOCIAL|sort %}
 									<li><a href="{{ link }}">{{ name }}</a></li>
 									{% endfor %}
 								</ul>
