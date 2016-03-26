@@ -1,0 +1,582 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Henry's SpiritLine</title>
+		<meta name="description" content="">
+		<meta name="author" content="henry">
+
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/foundation.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/hlcode.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/custom.css" />
+
+		<!-- GOOGLE WEB FONTS -->
+		<link href='http://fonts.useso.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/alt-fonts.css" />
+
+		<script src="http://spiritline.threebook.cn/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+		<link href="http://spiritline.threebook.cn/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Henry's SpiritLine Atom Feed" />
+
+<script>
+  (function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">Henry's&nbsp;SpiritLine</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="http://spiritline.threebook.cn">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+							<li class="active"><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="https://github.com/HenryChenV">Github</a></li>
+							<li><a href="http://threebook.cn">ThreeBook</a></li>
+							<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+							<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+							<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+							<li><a href="http://python-china.org">Python China</a></li>
+
+						<li><label>Whiz Libiary</label></li>
+							<li><a href="https://github.com/lepture">lepture</a></li>
+							<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+							<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+							<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+
+
+						<li><label>Monthly Archives</label></li>
+									<li><a href="/posts/2016/03/index.html">March 2016 (2)</a></li>
+									<li><a href="/posts/2016/02/index.html">February 2016 (8)</a></li>
+									<li><a href="/posts/2016/01/index.html">January 2016 (5)</a></li>
+									<li><a href="/posts/2015/12/index.html">December 2015 (1)</a></li>
+
+						<li><label>Social</label></li>
+							<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="http://spiritline.threebook.cn/">Henry's SpiritLine</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+								<li class="active"><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+    <h2><b>实现 Python 单例模式的几种方式</b></h2>
+    <hr/>
+    <h6>
+        <b>Date: </b>2016-03-13
+ 
+        <b>Tags: </b> 
+        <a href="http://spiritline.threebook.cn/tag/python.html">python</a>
+,         <a href="http://spiritline.threebook.cn/tag/design-pattern.html">design-pattern</a>
+    </h6>
+    <hr/>
+	<div class="toc">
+<ul>
+<li><a href="#_1">利用模块只会导入一次的特性</a></li>
+<li><a href="#__metaclass____call__">利用__metaclass__和__call__</a></li>
+<li><a href="#metaclass-new">利用 metaclass 和 new</a></li>
+</ul>
+</div>
+<h3 id="_1">利用模块只会导入一次的特性</h3>
+<p>在python中，多次导入某个模块，其实只会在第一次产生导入的动作
+World.py:  </p>
+<div class="highlight"><pre><span class="code-line"><span class="c1"># coding=utf-8</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="sd">&quot;&quot;&quot;</span></span>
+<span class="code-line"><span class="sd">利用python模块只会导入一次的特性写单例模式</span></span>
+<span class="code-line"><span class="sd">&quot;&quot;&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">class</span> <span class="nc">World</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span class="code-line">        <span class="bp">self</span><span class="o">.</span><span class="n">population</span> <span class="o">=</span> <span class="mi">0</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="s1">&#39;the world is running.&#39;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">_world</span> <span class="o">=</span> <span class="n">World</span><span class="p">()</span></span>
+<span class="code-line"><span class="n">population</span> <span class="o">=</span> <span class="n">_world</span><span class="o">.</span><span class="n">population</span></span>
+<span class="code-line"><span class="n">run</span> <span class="o">=</span> <span class="n">_world</span><span class="o">.</span><span class="n">run</span></span>
+</pre></div>
+
+
+<p>上面的_world, population, run只会在第一次导入模块的时候导入, 所以是单例</p>
+<h3 id="__metaclass____call__">利用__metaclass__和__call__</h3>
+<p>metaclass 是产生类的的类，可以在某个类中设置__metaclass__🔝用哪个类产生这个类,
+对于metaclass会先调用__new__产生类，然后调用metaclass的__new__初始化这个类(注意，初始化出来的是类，不是实例),metaclass中定义的方法都试类方法，只能通过类名调用(和用@classmethod生成的类方法不同，无法用实例调用)。
+在metaclass中定义__call__方法，这个方法会在ClassName()时被调用，这个方法为类方法，因此可以用这个方法保证单例。</p>
+<p>mysingleton.py</p>
+<div class="highlight"><pre><span class="code-line"><span class="c1"># -*- coding: utf-8 -*-</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">class</span> <span class="nc">SingletonMeta</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span></span>
+<span class="code-line">        <span class="nb">super</span><span class="p">(</span><span class="n">SingletonMeta</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span></span>
+<span class="code-line">        <span class="n">cls</span><span class="o">.</span><span class="n">instance</span> <span class="o">=</span> <span class="bp">None</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="n">cls</span><span class="o">.</span><span class="n">instance</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="n">cls</span><span class="o">.</span><span class="n">instance</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span></span>
+<span class="code-line">            <span class="k">print</span> <span class="s2">&quot;create new instance.&quot;</span></span>
+<span class="code-line">            <span class="n">cls</span><span class="o">.</span><span class="n">instance</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">SingletonMeta</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__call__</span><span class="p">(</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></span>
+<span class="code-line">        <span class="k">else</span><span class="p">:</span></span>
+<span class="code-line">            <span class="k">print</span> <span class="s2">&quot;instance was already existed.&quot;</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">instance</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">class</span> <span class="nc">MySingleton</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">SingletonMeta</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&quot;&quot;&quot;</span></span>
+<span class="code-line"><span class="sd">        __init__ 只会执行一次</span></span>
+<span class="code-line"><span class="sd">        &quot;&quot;&quot;</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="s2">&quot;init mc&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="s2">&quot;-------------------------&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">ms1</span> <span class="o">=</span> <span class="n">MySingleton</span><span class="p">()</span></span>
+<span class="code-line">    <span class="n">ms2</span> <span class="o">=</span> <span class="n">MySingleton</span><span class="p">()</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="n">ms1</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">ms1</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="n">ms2</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">ms2</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>结果:</p>
+<div class="highlight"><pre><span class="code-line">$ python mysingleton.py </span>
+<span class="code-line">-------------------------</span>
+<span class="code-line">None</span>
+<span class="code-line">create new instance.</span>
+<span class="code-line">init mc</span>
+<span class="code-line">&lt;__main__.MySingleton object at 0x1052b9490&gt;</span>
+<span class="code-line">instance was already existed.</span>
+<span class="code-line">&lt;__main__.MySingleton object at 0x1052b9490&gt; 4381709456</span>
+<span class="code-line">&lt;__main__.MySingleton object at 0x1052b9490&gt; 4381709456</span>
+</pre></div>
+
+
+<h3 id="metaclass-new">利用 <strong>metaclass</strong> 和 <strong>new</strong></h3>
+<p>类似于利用__call__，只是没上面那么繁琐
+MySingleton2.py</p>
+<div class="highlight"><pre><span class="code-line"><span class="c1"># -*- coding: utf-8 -*-</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">class</span> <span class="nc">SingletonMeta</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__new__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="n">cls</span><span class="p">,</span> <span class="n">SingletonMeta</span><span class="p">,</span> <span class="s2">&quot;__new__&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="s2">&quot;_instance&quot;</span><span class="p">):</span></span>
+<span class="code-line">            <span class="n">cls</span><span class="o">.</span><span class="n">_instance</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">SingletonMeta</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__new__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span></span>
+<span class="code-line">                                                              <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">_instance</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="s2">&quot;init&quot;</span><span class="p">,</span> <span class="n">cls</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">print</span> <span class="s2">&quot;SingletonMeta&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">class</span> <span class="nc">Test</span><span class="p">(</span><span class="n">SingletonMeta</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">SingletonMeta</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">print</span> <span class="s2">&quot;init test&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">print</span> <span class="s2">&quot;Test&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="s2">&quot;------------------------------------&quot;</span></span>
+<span class="code-line">    <span class="n">t1</span> <span class="o">=</span> <span class="n">Test</span><span class="p">()</span></span>
+<span class="code-line">    <span class="n">t2</span> <span class="o">=</span> <span class="n">Test</span><span class="p">()</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="n">t1</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">print</span> <span class="n">t2</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>结果:</p>
+<div class="highlight"><pre><span class="code-line">SingletonMeta</span>
+<span class="code-line">&lt;class <span class="s1">&#39;__main__.SingletonMeta&#39;</span>&gt; &lt;class <span class="s1">&#39;__main__.SingletonMeta&#39;</span>&gt; __new__</span>
+<span class="code-line">init &lt;class <span class="s1">&#39;__main__.Test&#39;</span>&gt;</span>
+<span class="code-line">Test</span>
+<span class="code-line">------------------------------------</span>
+<span class="code-line">&lt;class <span class="s1">&#39;__main__.Test&#39;</span>&gt; &lt;class <span class="s1">&#39;__main__.SingletonMeta&#39;</span>&gt; __new__</span>
+<span class="code-line">&lt;class <span class="s1">&#39;__main__.Test&#39;</span>&gt; &lt;class <span class="s1">&#39;__main__.SingletonMeta&#39;</span>&gt; __new__</span>
+<span class="code-line">&lt;class <span class="s1">&#39;__main__.Test&#39;</span>&gt; 140689093520960</span>
+<span class="code-line">&lt;class <span class="s1">&#39;__main__.Test&#39;</span>&gt; 140689093520960</span>
+</pre></div>
+	<hr/>
+    <h6>
+        Written by 
+        <a href="http://spiritline.threebook.cn/author/henry-chen.html">
+            Henry Chen
+        </a> 
+        in <a href="http://spiritline.threebook.cn/category/python.html">Python</a> 
+        on 2016-03-13,
+        last updated on 2016-03-13.
+    </h6>
+</article>
+
+<hr/>
+<div class="row">
+	<div class="small-12 columns">
+		<h3>Comments</h3>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'spiritline';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+								    <h5>Intro</h5>
+                                </a>
+								<ul class="side-nav">
+                                    <li>
+                                        <a href="#">Talk is cheap. Show me the code.--Linus Torvalds</a>
+                                    </li>
+								</ul>
+							</div>
+
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/tags.html"><h5>Tags</h5></a>
+								<ul class="tag-cloud">
+                                    <li>
+                                        <a href="/tag/ted.html" class="tag-3"> 
+                                            ted 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/theme.html" class="tag-4"> 
+                                            theme 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/soft-link.html" class="tag-4"> 
+                                            soft-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/dream.html" class="tag-4"> 
+                                            dream 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/hard-link.html" class="tag-4"> 
+                                            hard-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/mysql.html" class="tag-3"> 
+                                            mysql 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/reading-notes.html" class="tag-1"> 
+                                            reading-notes 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/life.html" class="tag-4"> 
+                                            life 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/nginx.html" class="tag-4"> 
+                                            nginx 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/fun.html" class="tag-2"> 
+                                            fun 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/blog.html" class="tag-4"> 
+                                            blog 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/english.html" class="tag-4"> 
+                                            English 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/centos7.html" class="tag-4"> 
+                                            centos7 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/build-in-function.html" class="tag-3"> 
+                                            build-in-function 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/work.html" class="tag-4"> 
+                                            work 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/uwsgi.html" class="tag-4"> 
+                                            uwsgi 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/configparser.html" class="tag-4"> 
+                                            configparser 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/collections.html" class="tag-4"> 
+                                            collections 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/vim.html" class="tag-4"> 
+                                            vim 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/system.html" class="tag-4"> 
+                                            system 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/symbolic-link.html" class="tag-4"> 
+                                            symbolic-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/with.html" class="tag-4"> 
+                                            with 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/counter.html" class="tag-4"> 
+                                            counter 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/design-pattern.html" class="tag-4"> 
+                                            design-pattern 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/play.html" class="tag-4"> 
+                                            play 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/c.html" class="tag-4"> 
+                                            c 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/python.html" class="tag-1"> 
+                                            python 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/thinking.html" class="tag-4"> 
+                                            thinking 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/chaos.html" class="tag-4"> 
+                                            chaos 
+                                        </a>
+                                    </li>
+								</ul>
+							</div>
+
+                            <div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+                                    <h5>Archives (16)</h5>
+                                </a>
+                                <ul class="side-nav"> 
+                                    <li>
+                                        <a href="/posts/2016/index.html">
+                                            2016 (15)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2016/03/index.html">
+                                                    March 2016 (2)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/02/index.html">
+                                                    February 2016 (8)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/01/index.html">
+                                                    January 2016 (5)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/posts/2016/index.html">
+                                            2015 (1)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2015/12/index.html">
+                                                    December 2015 (1)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+							<div class="panel">
+								<h5>Whiz Libiary</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/lepture">lepture</a></li>
+									<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+									<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+									<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/HenryChenV">Github</a></li>
+									<li><a href="http://threebook.cn">ThreeBook</a></li>
+									<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+									<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+									<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+									<li><a href="http://python-china.org">Python China</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+								</ul>
+							</div>
+
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12 columns">
+							<hr/>
+							<p class="text-center">Contact me: Henry Chen, Email: <a href='mailto:chen_hanli@163.com'>chen_hanli@163.com</a>, QQ: 648667940</p>
+						</div>
+                        <aside class="medium-3 hide-for-small-only columns">
+                            <p class="text-left"><a href="#">Back to Top</a></p>
+                        </aside>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="http://spiritline.threebook.cn/theme/js/jquery.js"></script>
+		<script src="http://spiritline.threebook.cn/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

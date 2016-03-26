@@ -1,0 +1,660 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Henry's SpiritLine</title>
+		<meta name="description" content="">
+		<meta name="author" content="henry">
+
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/foundation.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/hlcode.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/custom.css" />
+
+		<!-- GOOGLE WEB FONTS -->
+		<link href='http://fonts.useso.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/alt-fonts.css" />
+
+		<script src="http://spiritline.threebook.cn/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+		<link href="http://spiritline.threebook.cn/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Henry's SpiritLine Atom Feed" />
+
+<script>
+  (function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">Henry's&nbsp;SpiritLine</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="http://spiritline.threebook.cn">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+							<li class="active"><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="https://github.com/HenryChenV">Github</a></li>
+							<li><a href="http://threebook.cn">ThreeBook</a></li>
+							<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+							<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+							<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+							<li><a href="http://python-china.org">Python China</a></li>
+
+						<li><label>Whiz Libiary</label></li>
+							<li><a href="https://github.com/lepture">lepture</a></li>
+							<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+							<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+							<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+
+
+						<li><label>Monthly Archives</label></li>
+									<li><a href="/posts/2016/03/index.html">March 2016 (2)</a></li>
+									<li><a href="/posts/2016/02/index.html">February 2016 (8)</a></li>
+									<li><a href="/posts/2016/01/index.html">January 2016 (5)</a></li>
+									<li><a href="/posts/2015/12/index.html">December 2015 (1)</a></li>
+
+						<li><label>Social</label></li>
+							<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="http://spiritline.threebook.cn/">Henry's SpiritLine</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+								<li class="active"><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+    <h2><b>vim配置</b></h2>
+    <hr/>
+    <h6>
+        <b>Date: </b>2016-01-31
+ 
+        <b>Tags: </b> 
+        <a href="http://spiritline.threebook.cn/tag/vim.html">vim</a>
+,         <a href="http://spiritline.threebook.cn/tag/theme.html">theme</a>
+,         <a href="http://spiritline.threebook.cn/tag/fun.html">fun</a>
+    </h6>
+    <hr/>
+	<div class="toc">
+<ul></ul>
+</div>
+<p>一直用vim座位ide，我的配置是基于前辈的改的，现在放在我的<a href="https://github.com/HenryChenV/vimrc">github</a>上.</p>
+<p>之前vim的主题一直用的solorize的light背景，最近感觉这个背景有点亮，也可能是看腻了，想换个暗一点的背景。
+于是选择了molokai，很像sublime主题的一款主题，但发现选中时候，选中的部分看得不明显，于是做了些修改，主要是颜色方面的。<br />
+颜色可以参考<br />
+<img alt="vim所有颜色" src="images/vim/vim-color.png" /></p>
+<p>我修改后的主题代码,new_molokai.vim:  </p>
+<div class="highlight"><pre><span class="code-line"><span class="s2">&quot; Vim color file</span></span>
+<span class="code-line"><span class="s2">&quot;</span></span>
+<span class="code-line"><span class="s2">&quot; Author: Tomas Restrepo &lt;tomas@winterdom.com&gt;</span></span>
+<span class="code-line"><span class="s2">&quot;</span></span>
+<span class="code-line"><span class="s2">&quot; Note: Based on the monokai theme for textmate</span></span>
+<span class="code-line"><span class="s2">&quot;</span> by Wimer Hazenberg and its darker variant </span>
+<span class="code-line"><span class="s2">&quot; by Hamish Stuart Macpherson</span></span>
+<span class="code-line"><span class="s2">&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi clear</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="nb">set</span> <span class="nv">background</span><span class="o">=</span>dark</span>
+<span class="code-line"><span class="k">if</span> version &gt; 580</span>
+<span class="code-line">    <span class="s2">&quot; no guarantees for version 5.8 and below, but this makes it stop</span></span>
+<span class="code-line"><span class="s2">    &quot;</span> complaining</span>
+<span class="code-line">    hi clear</span>
+<span class="code-line">    <span class="k">if</span> exists<span class="o">(</span><span class="s2">&quot;syntax_on&quot;</span><span class="o">)</span></span>
+<span class="code-line">        syntax reset</span>
+<span class="code-line">    endif</span>
+<span class="code-line">endif</span>
+<span class="code-line"><span class="nb">let</span> g:colors_name<span class="o">=</span><span class="s2">&quot;molokai&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">if</span> exists<span class="o">(</span><span class="s2">&quot;g:molokai_original&quot;</span><span class="o">)</span></span>
+<span class="code-line">    <span class="nb">let</span> s:molokai_original <span class="o">=</span> g:molokai_original</span>
+<span class="code-line"><span class="k">else</span></span>
+<span class="code-line">    <span class="nb">let</span> s:molokai_original <span class="o">=</span> 0</span>
+<span class="code-line">endif</span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line">hi Boolean         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#AE81FF</span></span>
+<span class="code-line">hi Character       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#E6DB74</span></span>
+<span class="code-line">hi Number          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#AE81FF</span></span>
+<span class="code-line">hi String          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#E6DB74</span></span>
+<span class="code-line">hi Conditional     <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672               gui=bold</span></span>
+<span class="code-line">hi Constant        <span class="nv">guifg</span><span class="o">=</span><span class="c1">#AE81FF               gui=bold</span></span>
+<span class="code-line">hi Cursor          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#000000 guibg=#F8F8F0</span></span>
+<span class="code-line">hi Debug           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#BCA3A3               gui=bold</span></span>
+<span class="code-line">hi Define          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF</span></span>
+<span class="code-line">hi Delimiter       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#8F8F8F</span></span>
+<span class="code-line">hi DiffAdd                       <span class="nv">guibg</span><span class="o">=</span><span class="c1">#13354A</span></span>
+<span class="code-line">hi DiffChange      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#89807D guibg=#4C4745</span></span>
+<span class="code-line">hi DiffDelete      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#960050 guibg=#1E0010</span></span>
+<span class="code-line">hi DiffText                      <span class="nv">guibg</span><span class="o">=</span><span class="c1">#4C4745 gui=italic,bold</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi Directory       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#A6E22E               gui=bold</span></span>
+<span class="code-line">hi Error           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#960050 guibg=#1E0010</span></span>
+<span class="code-line">hi ErrorMsg        <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672 guibg=#232526 gui=bold</span></span>
+<span class="code-line">hi Exception       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#A6E22E               gui=bold</span></span>
+<span class="code-line">hi Float           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#AE81FF</span></span>
+<span class="code-line">hi FoldColumn      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#465457 guibg=#000000</span></span>
+<span class="code-line">hi Folded          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#465457 guibg=#000000</span></span>
+<span class="code-line">hi Function        <span class="nv">guifg</span><span class="o">=</span><span class="c1">#A6E22E</span></span>
+<span class="code-line">hi Identifier      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#FD971F</span></span>
+<span class="code-line">hi Ignore          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#808080 guibg=bg</span></span>
+<span class="code-line">hi IncSearch       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#C4BE89 guibg=#000000</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi Keyword         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672               gui=bold</span></span>
+<span class="code-line">hi Label           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#E6DB74               gui=none</span></span>
+<span class="code-line">hi Macro           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#C4BE89               gui=italic</span></span>
+<span class="code-line">hi SpecialKey      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF               gui=italic</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi MatchParen      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#000000 guibg=#FD971F gui=bold</span></span>
+<span class="code-line">hi ModeMsg         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#E6DB74</span></span>
+<span class="code-line">hi MoreMsg         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#E6DB74</span></span>
+<span class="code-line">hi Operator        <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">&quot; complete menu</span></span>
+<span class="code-line"><span class="s2">hi Pmenu           guifg=#66D9EF guibg=#000000</span></span>
+<span class="code-line"><span class="s2">hi PmenuSel                      guibg=#808080</span></span>
+<span class="code-line"><span class="s2">hi PmenuSbar                     guibg=#080808</span></span>
+<span class="code-line"><span class="s2">hi PmenuThumb      guifg=#66D9EF</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">hi PreCondit       guifg=#A6E22E               gui=bold</span></span>
+<span class="code-line"><span class="s2">hi PreProc         guifg=#A6E22E</span></span>
+<span class="code-line"><span class="s2">hi Question        guifg=#66D9EF</span></span>
+<span class="code-line"><span class="s2">hi Repeat          guifg=#F92672               gui=bold</span></span>
+<span class="code-line"><span class="s2">hi Search          guifg=#FFFFFF guibg=#455354</span></span>
+<span class="code-line"><span class="s2">&quot;</span> marks column</span>
+<span class="code-line">hi SignColumn      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#A6E22E guibg=#232526</span></span>
+<span class="code-line">hi SpecialChar     <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672               gui=bold</span></span>
+<span class="code-line">hi SpecialComment  <span class="nv">guifg</span><span class="o">=</span><span class="c1">#465457               gui=bold</span></span>
+<span class="code-line">hi Special         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF guibg=bg      gui=italic</span></span>
+<span class="code-line">hi SpecialKey      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#888A85               gui=italic</span></span>
+<span class="code-line"><span class="k">if</span> has<span class="o">(</span><span class="s2">&quot;spell&quot;</span><span class="o">)</span></span>
+<span class="code-line">    hi SpellBad    <span class="nv">guisp</span><span class="o">=</span><span class="c1">#FF0000 gui=undercurl</span></span>
+<span class="code-line">    hi SpellCap    <span class="nv">guisp</span><span class="o">=</span><span class="c1">#7070F0 gui=undercurl</span></span>
+<span class="code-line">    hi SpellLocal  <span class="nv">guisp</span><span class="o">=</span><span class="c1">#70F0F0 gui=undercurl</span></span>
+<span class="code-line">    hi SpellRare   <span class="nv">guisp</span><span class="o">=</span><span class="c1">#FFFFFF gui=undercurl</span></span>
+<span class="code-line">endif</span>
+<span class="code-line">hi Statement       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672               gui=bold</span></span>
+<span class="code-line">hi StatusLine      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#455354 guibg=fg</span></span>
+<span class="code-line">hi StatusLineNC    <span class="nv">guifg</span><span class="o">=</span><span class="c1">#808080 guibg=#080808</span></span>
+<span class="code-line">hi StorageClass    <span class="nv">guifg</span><span class="o">=</span><span class="c1">#FD971F               gui=italic</span></span>
+<span class="code-line">hi Structure       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF</span></span>
+<span class="code-line">hi Tag             <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F92672               gui=italic</span></span>
+<span class="code-line">hi Title           <span class="nv">guifg</span><span class="o">=</span><span class="c1">#ef5939</span></span>
+<span class="code-line">hi Todo            <span class="nv">guifg</span><span class="o">=</span><span class="c1">#FFFFFF guibg=bg      gui=bold</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi Typedef         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF</span></span>
+<span class="code-line">hi Type            <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF               gui=none</span></span>
+<span class="code-line">hi Underlined      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#808080               gui=underline</span></span>
+<span class="code-line"></span>
+<span class="code-line">hi VertSplit       <span class="nv">guifg</span><span class="o">=</span><span class="c1">#808080 guibg=#080808 gui=bold</span></span>
+<span class="code-line">hi VisualNOS                     <span class="nv">guibg</span><span class="o">=</span><span class="c1">#403D3D</span></span>
+<span class="code-line">hi Visual                        <span class="nv">guibg</span><span class="o">=</span><span class="c1">#403D3D</span></span>
+<span class="code-line">hi WarningMsg      <span class="nv">guifg</span><span class="o">=</span><span class="c1">#FFFFFF guibg=#333333 gui=bold</span></span>
+<span class="code-line">hi WildMenu        <span class="nv">guifg</span><span class="o">=</span><span class="c1">#66D9EF guibg=#000000</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">if</span> s:molokai_original <span class="o">==</span> 1</span>
+<span class="code-line">   hi Normal          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F8F8F2 guibg=#272822</span></span>
+<span class="code-line">   hi Comment         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#75715E</span></span>
+<span class="code-line">   hi CursorLine                    <span class="nv">guibg</span><span class="o">=</span><span class="c1">#3E3D32</span></span>
+<span class="code-line">   hi CursorColumn                  <span class="nv">guibg</span><span class="o">=</span><span class="c1">#3E3D32</span></span>
+<span class="code-line">   hi LineNr          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#BCBCBC guibg=#3B3A32</span></span>
+<span class="code-line">   hi NonText         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#BCBCBC guibg=#3B3A32</span></span>
+<span class="code-line"><span class="k">else</span></span>
+<span class="code-line">   hi Normal          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#F8F8F2 guibg=#1B1D1E</span></span>
+<span class="code-line">   hi Comment         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#465457</span></span>
+<span class="code-line">   hi CursorLine                    <span class="nv">guibg</span><span class="o">=</span><span class="c1">#293739</span></span>
+<span class="code-line">   hi CursorColumn                  <span class="nv">guibg</span><span class="o">=</span><span class="c1">#293739</span></span>
+<span class="code-line">   hi LineNr          <span class="nv">guifg</span><span class="o">=</span><span class="c1">#BCBCBC guibg=#232526</span></span>
+<span class="code-line">   hi NonText         <span class="nv">guifg</span><span class="o">=</span><span class="c1">#BCBCBC guibg=#232526</span></span>
+<span class="code-line">end</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">&quot;</span></span>
+<span class="code-line"><span class="s2">&quot;</span> Support <span class="k">for</span> 256-color terminal</span>
+<span class="code-line"><span class="s2">&quot;</span></span>
+<span class="code-line"><span class="s2">if &amp;t_Co &gt; 255</span></span>
+<span class="code-line"><span class="s2">   hi Boolean         ctermfg=135</span></span>
+<span class="code-line"><span class="s2">   hi Character       ctermfg=144</span></span>
+<span class="code-line"><span class="s2">   hi Number          ctermfg=135</span></span>
+<span class="code-line"><span class="s2">   hi String          ctermfg=144</span></span>
+<span class="code-line"><span class="s2">   hi Conditional     ctermfg=161               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Constant        ctermfg=135               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Cursor          ctermfg=16  ctermbg=253</span></span>
+<span class="code-line"><span class="s2">   hi Debug           ctermfg=225               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Define          ctermfg=81</span></span>
+<span class="code-line"><span class="s2">   hi Delimiter       ctermfg=241</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi DiffAdd                     ctermbg=24</span></span>
+<span class="code-line"><span class="s2">   hi DiffChange      ctermfg=181 ctermbg=239</span></span>
+<span class="code-line"><span class="s2">   hi DiffDelete      ctermfg=162 ctermbg=53</span></span>
+<span class="code-line"><span class="s2">   hi DiffText                    ctermbg=102 cterm=bold</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi Directory       ctermfg=118               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Error           ctermfg=219 ctermbg=89</span></span>
+<span class="code-line"><span class="s2">   hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Exception       ctermfg=118               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Float           ctermfg=135</span></span>
+<span class="code-line"><span class="s2">   hi FoldColumn      ctermfg=67  ctermbg=16</span></span>
+<span class="code-line"><span class="s2">   hi Folded          ctermfg=67  ctermbg=16</span></span>
+<span class="code-line"><span class="s2">   hi Function        ctermfg=118</span></span>
+<span class="code-line"><span class="s2">   hi Identifier      ctermfg=208</span></span>
+<span class="code-line"><span class="s2">   hi Ignore          ctermfg=244 ctermbg=232</span></span>
+<span class="code-line"><span class="s2">   hi IncSearch       ctermfg=193 ctermbg=16</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi Keyword         ctermfg=161               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Label           ctermfg=229               cterm=none</span></span>
+<span class="code-line"><span class="s2">   hi Macro           ctermfg=193</span></span>
+<span class="code-line"><span class="s2">   hi SpecialKey      ctermfg=81</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi MatchParen      ctermfg=16  ctermbg=208 cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi ModeMsg         ctermfg=229</span></span>
+<span class="code-line"><span class="s2">   hi MoreMsg         ctermfg=229</span></span>
+<span class="code-line"><span class="s2">   hi Operator        ctermfg=161</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   &quot;</span> <span class="nb">complete</span> menu</span>
+<span class="code-line">   hi Pmenu           <span class="nv">ctermfg</span><span class="o">=</span><span class="m">81</span>  <span class="nv">ctermbg</span><span class="o">=</span>16</span>
+<span class="code-line">   hi PmenuSel                    <span class="nv">ctermbg</span><span class="o">=</span>244</span>
+<span class="code-line">   hi PmenuSbar                   <span class="nv">ctermbg</span><span class="o">=</span>232</span>
+<span class="code-line">   hi PmenuThumb      <span class="nv">ctermfg</span><span class="o">=</span>81</span>
+<span class="code-line"></span>
+<span class="code-line">   hi PreCondit       <span class="nv">ctermfg</span><span class="o">=</span><span class="m">118</span>               <span class="nv">cterm</span><span class="o">=</span>bold</span>
+<span class="code-line">   hi PreProc         <span class="nv">ctermfg</span><span class="o">=</span>118</span>
+<span class="code-line">   hi Question        <span class="nv">ctermfg</span><span class="o">=</span>81</span>
+<span class="code-line">   hi Repeat          <span class="nv">ctermfg</span><span class="o">=</span><span class="m">161</span>               <span class="nv">cterm</span><span class="o">=</span>bold</span>
+<span class="code-line">   hi Search          <span class="nv">ctermfg</span><span class="o">=</span><span class="m">253</span> <span class="nv">ctermbg</span><span class="o">=</span>66</span>
+<span class="code-line"></span>
+<span class="code-line">   <span class="s2">&quot; marks column</span></span>
+<span class="code-line"><span class="s2">   hi SignColumn      ctermfg=118 ctermbg=235</span></span>
+<span class="code-line"><span class="s2">   hi SpecialChar     ctermfg=161               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi SpecialComment  ctermfg=245               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi Special         ctermfg=81  ctermbg=232</span></span>
+<span class="code-line"><span class="s2">   hi SpecialKey      ctermfg=245</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi Statement       ctermfg=161               cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi StatusLine      ctermfg=238 ctermbg=253</span></span>
+<span class="code-line"><span class="s2">   hi StatusLineNC    ctermfg=244 ctermbg=232</span></span>
+<span class="code-line"><span class="s2">   hi StorageClass    ctermfg=208</span></span>
+<span class="code-line"><span class="s2">   hi Structure       ctermfg=81</span></span>
+<span class="code-line"><span class="s2">   hi Tag             ctermfg=161</span></span>
+<span class="code-line"><span class="s2">   hi Title           ctermfg=166</span></span>
+<span class="code-line"><span class="s2">   hi Todo            ctermfg=231 ctermbg=232   cterm=bold</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi Typedef         ctermfg=81</span></span>
+<span class="code-line"><span class="s2">   hi Type            ctermfg=81                cterm=none</span></span>
+<span class="code-line"><span class="s2">   hi Underlined      ctermfg=244               cterm=underline</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi VisualNOS                   ctermbg=238</span></span>
+<span class="code-line"><span class="s2">   hi Visual                      ctermbg=238</span></span>
+<span class="code-line"><span class="s2">   hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold</span></span>
+<span class="code-line"><span class="s2">   hi WildMenu        ctermfg=81  ctermbg=16</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">   hi Normal          ctermfg=252 ctermbg=233</span></span>
+<span class="code-line"><span class="s2">   hi Comment         ctermfg=59</span></span>
+<span class="code-line"><span class="s2">   hi CursorLine                  ctermbg=234   cterm=none</span></span>
+<span class="code-line"><span class="s2">   hi CursorColumn                ctermbg=234</span></span>
+<span class="code-line"><span class="s2">   hi LineNr          ctermfg=250 ctermbg=234</span></span>
+<span class="code-line"><span class="s2">   hi NonText         ctermfg=250 ctermbg=234</span></span>
+<span class="code-line"><span class="s2">end</span></span>
+</pre></div>
+	<hr/>
+    <h6>
+        Written by 
+        <a href="http://spiritline.threebook.cn/author/henry-chen.html">
+            Henry Chen
+        </a> 
+        in <a href="http://spiritline.threebook.cn/category/vim.html">VIM</a> 
+        on 2016-01-31,
+        last updated on 2016-01-31.
+    </h6>
+</article>
+
+<hr/>
+<div class="row">
+	<div class="small-12 columns">
+		<h3>Comments</h3>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'spiritline';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+								    <h5>Intro</h5>
+                                </a>
+								<ul class="side-nav">
+                                    <li>
+                                        <a href="#">Talk is cheap. Show me the code.--Linus Torvalds</a>
+                                    </li>
+								</ul>
+							</div>
+
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/tags.html"><h5>Tags</h5></a>
+								<ul class="tag-cloud">
+                                    <li>
+                                        <a href="/tag/ted.html" class="tag-3"> 
+                                            ted 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/theme.html" class="tag-4"> 
+                                            theme 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/soft-link.html" class="tag-4"> 
+                                            soft-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/dream.html" class="tag-4"> 
+                                            dream 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/hard-link.html" class="tag-4"> 
+                                            hard-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/mysql.html" class="tag-3"> 
+                                            mysql 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/reading-notes.html" class="tag-1"> 
+                                            reading-notes 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/life.html" class="tag-4"> 
+                                            life 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/nginx.html" class="tag-4"> 
+                                            nginx 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/fun.html" class="tag-2"> 
+                                            fun 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/blog.html" class="tag-4"> 
+                                            blog 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/english.html" class="tag-4"> 
+                                            English 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/centos7.html" class="tag-4"> 
+                                            centos7 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/build-in-function.html" class="tag-3"> 
+                                            build-in-function 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/work.html" class="tag-4"> 
+                                            work 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/uwsgi.html" class="tag-4"> 
+                                            uwsgi 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/configparser.html" class="tag-4"> 
+                                            configparser 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/collections.html" class="tag-4"> 
+                                            collections 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/vim.html" class="tag-4"> 
+                                            vim 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/system.html" class="tag-4"> 
+                                            system 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/symbolic-link.html" class="tag-4"> 
+                                            symbolic-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/with.html" class="tag-4"> 
+                                            with 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/counter.html" class="tag-4"> 
+                                            counter 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/design-pattern.html" class="tag-4"> 
+                                            design-pattern 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/play.html" class="tag-4"> 
+                                            play 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/c.html" class="tag-4"> 
+                                            c 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/python.html" class="tag-1"> 
+                                            python 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/thinking.html" class="tag-4"> 
+                                            thinking 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/chaos.html" class="tag-4"> 
+                                            chaos 
+                                        </a>
+                                    </li>
+								</ul>
+							</div>
+
+                            <div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+                                    <h5>Archives (16)</h5>
+                                </a>
+                                <ul class="side-nav"> 
+                                    <li>
+                                        <a href="/posts/2016/index.html">
+                                            2016 (15)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2016/03/index.html">
+                                                    March 2016 (2)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/02/index.html">
+                                                    February 2016 (8)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/01/index.html">
+                                                    January 2016 (5)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/posts/2016/index.html">
+                                            2015 (1)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2015/12/index.html">
+                                                    December 2015 (1)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+							<div class="panel">
+								<h5>Whiz Libiary</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/lepture">lepture</a></li>
+									<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+									<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+									<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/HenryChenV">Github</a></li>
+									<li><a href="http://threebook.cn">ThreeBook</a></li>
+									<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+									<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+									<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+									<li><a href="http://python-china.org">Python China</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+								</ul>
+							</div>
+
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12 columns">
+							<hr/>
+							<p class="text-center">Contact me: Henry Chen, Email: <a href='mailto:chen_hanli@163.com'>chen_hanli@163.com</a>, QQ: 648667940</p>
+						</div>
+                        <aside class="medium-3 hide-for-small-only columns">
+                            <p class="text-left"><a href="#">Back to Top</a></p>
+                        </aside>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="http://spiritline.threebook.cn/theme/js/jquery.js"></script>
+		<script src="http://spiritline.threebook.cn/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

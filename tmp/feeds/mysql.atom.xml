@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Henry's SpiritLine</title><link href="http://spiritline.threebook.cn/" rel="alternate"></link><link href="http://spiritline.threebook.cn/feeds/mysql.atom.xml" rel="self"></link><id>http://spiritline.threebook.cn/</id><updated>2016-02-18T11:54:00+08:00</updated><entry><title>MySQL 删除重复数据</title><link href="http://spiritline.threebook.cn/delete-duplicate-records.html" rel="alternate"></link><updated>2016-02-18T11:54:00+08:00</updated><author><name>Henry Chen</name></author><id>tag:spiritline.threebook.cn,2016-02-18:delete-duplicate-records.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;删除重复数据&lt;br /&gt;
+image_info表中每个ImgUrl应该只对应一条记录,删除多余记录&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;image_info&lt;/span&gt; &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="k"&gt;where&lt;/span&gt; &lt;span class="k"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;3010&lt;/span&gt; &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;        &lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;            &lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;image_info&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ImgUrl&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;            &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;        &lt;span class="p"&gt;);&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="mysql"></category><category term="work"></category></entry></feed>
