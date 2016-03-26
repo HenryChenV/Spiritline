@@ -121,8 +121,8 @@ cf_upload: publish
 github: publish
 #	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 #	git push origin $(GITHUB_PAGES_BRANCH)
+	git init $(OUTPUTDIR)
 	cd $(OUTPUTDIR)
-	git init
 #	git remote add origin git@github.com:HenryChenV/henrychenv.github.io.git
 	git add --all
 	git commit -m "published from SpiritLine"
