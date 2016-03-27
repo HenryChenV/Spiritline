@@ -119,14 +119,8 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
+	${BASEDIR}/upload_ghp.sh
 #	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 #	git push origin $(GITHUB_PAGES_BRANCH)
-	git init $(OUTPUTDIR)
-	cd $(OUTPUTDIR)
-#	git remote add origin git@github.com:HenryChenV/henrychenv.github.io.git
-	git add --all
-	git commit -m "published from SpiritLine"
-#	git push -f origin master
-#	mv .git /tmp/
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
