@@ -32,6 +32,7 @@ WHIZ_LIB = (
     ('依云\'s Blog', 'http://lilydjwg.is-programmer.com/'),
     ('requests/Kenneth Reitz', 'https://github.com/kennethreitz'),
     ('Jinja2/Armin Ronacher', 'https://github.com/mitsuhiko'),
+    ('小胡子哥/同龄/前端', 'http://www.barretlee.com/entry/')
 )
 
 # Blogroll
