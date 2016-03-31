@@ -26,12 +26,24 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# whiz libiary
+WHIZ_LIB = (
+    ('lepture', 'https://github.com/lepture'),
+    ('依云\'s Blog', 'http://lilydjwg.is-programmer.com/'),
+    ('requests/Kenneth Reitz', 'https://github.com/kennethreitz'),
+    ('Jinja2/Armin Ronacher', 'https://github.com/mitsuhiko'),
+    ('小胡子哥/同龄/前端', 'http://www.barretlee.com/entry/')
+)
+
 # Blogroll
 LINKS = (
     ('Github', 'https://github.com/HenryChenV'),
     ('ThreeBook', 'http://threebook.cn'),
     ('Markdown Syntax', 'http://markdown-zh.readthedocs.org/en/latest/'),
     ('Pelican 中文文档', 'http://pelican-docs-zh-cn.readthedocs.org/en/latest/'),
+    ('廖雪峰 Python 2.7教程', 'http://www.liaoxuefeng.com' \
+     + '/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0'),
+    ('Python China', 'http://python-china.org')
 )
 
 # Social widget

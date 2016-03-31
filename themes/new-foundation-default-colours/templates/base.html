@@ -18,7 +18,7 @@
 
 		{% if FOUNDATION_ALTERNATE_FONTS %}
 		<!-- GOOGLE WEB FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/alt-fonts.css" />
 		{% endif %}
 
@@ -76,6 +76,11 @@
 
 						<li><label>Links</label></li>
 							{% for name, link in LINKS %}
+							<li><a href="{{ link }}">{{ name }}</a></li>
+							{% endfor %}
+
+						<li><label>Whiz Libiary</label></li>
+							{% for name, link in WHIZ_LIB %}
 							<li><a href="{{ link }}">{{ name }}</a></li>
 							{% endfor %}
 
@@ -202,9 +207,9 @@
 							{% endif %}
 
 							<div class="panel">
-								<h5>Social</h5>
+								<h5>Whiz Libiary</h5>
 								<ul class="side-nav">
-									{% for name, link in SOCIAL|sort %}
+									{% for name, link in WHIZ_LIB %}
 									<li><a href="{{ link }}">{{ name }}</a></li>
 									{% endfor %}
 								</ul>
@@ -214,6 +219,15 @@
 								<h5>Links</h5>
 								<ul class="side-nav">
 									{% for name, link in LINKS %}
+									<li><a href="{{ link }}">{{ name }}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									{% for name, link in SOCIAL|sort %}
 									<li><a href="{{ link }}">{{ name }}</a></li>
 									{% endfor %}
 								</ul>
