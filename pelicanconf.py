@@ -28,6 +28,7 @@ AUTHOR_FEED_RSS = None
 
 # whiz libiary
 WHIZ_LIB = (
+    ('阮一峰', 'http://www.ruanyifeng.com/blog/'),
     ('lepture', 'https://github.com/lepture'),
     ('依云\'s Blog', 'http://lilydjwg.is-programmer.com/'),
     ('requests/Kenneth Reitz', 'https://github.com/kennethreitz'),

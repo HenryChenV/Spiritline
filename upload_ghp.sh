@@ -1,4 +1,5 @@
 #!/bin/bash
+# upload to github pages
 
 BASE_DIR=`pwd`
 OUTPUT_DIR=${BASE_DIR}/output
