@@ -13,7 +13,7 @@ Status: published
 之前vim的主题一直用的solorize的light背景，最近感觉这个背景有点亮，也可能是看腻了，想换个暗一点的背景。
 于是选择了molokai，很像sublime主题的一款主题，但发现选中时候，选中的部分看得不明显，于是做了些修改，主要是颜色方面的。  
 颜色可以参考  
-![vim所有颜色](images/vim/vim-color.png)
+![vim所有颜色](static/images/vim/vim-color.png)
 
 我修改后的主题代码,new_molokai.vim:  
 ``` bash

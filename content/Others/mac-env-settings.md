@@ -19,16 +19,16 @@ Status: published
 
 #### 轻点来点按
 系统便好设置 -> 触摸板 -> 光标与点按 -> 轻点来点按
-![轻点来点按](/images/mac-env/touchpad1.jpg)
+![轻点来点按](/static/images/mac-env/touchpad1.jpg)
 
 #### 三指拖移
 系统便好设置 -> 辅助功能 -> 鼠标与触摸板 -> 触控板选项 -> 启用拖移 -> 三指拖移
-![三指拖移](/images/mac-env/touchpad2.jpg)
+![三指拖移](/static/images/mac-env/touchpad2.jpg)
 
 ### ssh远程登录
 新的系统只能通过ssh登录到其他机器, 无法从其他机器ssh到自己的机器, 需要允许这个操作  
 系统便好设置 -> 共享 -> 远程登录
-![ssh远程登录](/images/mac-env/ssh.jpg)
+![ssh远程登录](/static/images/mac-env/ssh.jpg)
 
 
 ## 开发环境配置
@@ -42,6 +42,10 @@ brew的bin会安装到/usr/local/bin/下, 个人推荐用brew管理mac上的包,
 需要用什么包直接用brew装下, 比如python, git, 不要用mac自带的, 特别在Mac OS X 10.11.4 El Capitan之后  
 之前可以用`brew versions pkg`查看可安装的包的版本, 但新的brew提供了这种方式,  
 先要`brew tap homebrew/versions`, 然后用`brew search xxx`的时候就能看到不同版本的包, 直接`brew install xxx-v.x`就可以了
+
+
+### terminal 颜色
+[配置文件](/static/downloads/mac-env/Blackboard-sp.terminal)
 
 ### ls颜色
 1. 通过Homebrew安装Coreutils  
