@@ -101,7 +101,7 @@ SITEMAP = {
 }
 
 # Static Files
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['static']
 
 DISPLAY_TAGS_ON_SIDEBAR = False
 DISPLAY_TAGS_INLINE = True

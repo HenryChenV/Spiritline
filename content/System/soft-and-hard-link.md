@@ -22,7 +22,7 @@ Status: published
 
 ### inode
 > 我们知道文件都有文件名与数据，这在 Linux 上被分成两个部分：用户数据 (user data) 与元数据 (metadata)。用户数据，即文件数据块 (data block)，数据块是记录文件真实内容的地方；而元数据则是文件的附加属性，如文件大小、创建时间、所有者等信息。在 Linux 中，元数据中的 inode 号（inode 是文件元数据的一部分但其并不包含文件名，inode 号即索引节点号）才是文件的唯一标识而非文件名。文件名仅是为了方便人们的记忆和使用，系统或程序通过 inode 号寻找正确的文件数据块。
-![通过文件名打开文件](/images/sysops/find-file-by-filename.jpg)
+![通过文件名打开文件](/static/images/sysops/find-file-by-filename.jpg)
 
 ```bash 
 # stat /home/harris/source/glibc-2.16.0.tar.xz 
@@ -142,7 +142,7 @@ Fragment size=1024 (log=0)
 + 可以对文件或目录创建
 + 删除soft link 不影响原文件，删除原文件soft link会变成死链
 
-![链接访问](/images/sysops/visit-soft-link.jpg 链接访问)
+![链接访问](/static/images/sysops/visit-soft-link.jpg 链接访问)
 
 
 ### 使用命令 find 查找软链接与硬链接
