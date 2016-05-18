@@ -16,6 +16,7 @@ Status: published
 ![vim所有颜色](static/images/vim/vim-color.png)
 
 我修改后的主题代码,new_molokai.vim:  
+
 ``` bash
 " Vim color file
 "
