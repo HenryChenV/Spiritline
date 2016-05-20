@@ -141,3 +141,7 @@ brew install python
 ## 工具
 
 ### vmware fusion
+虚拟机必备
+
+### MacVim
+比linux上的vim更好用，目前看来是这样的
