@@ -19,3 +19,5 @@ Status: draft
 6. requests源码 (2016-04-24)
 7. tornado源码 (2016-05-01)
 8. [python设计模式](https://github.com/faif/python-patterns)
+
+9. flask blinker源码
