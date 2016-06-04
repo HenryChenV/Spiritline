@@ -453,6 +453,7 @@ http {
 ##### vhost 配置
 在跟nginx.conf同级目录下`mkdir conf.d`,用于存放vhost配置文件
 vhost文件: 例如:bookbbs.conf:
+
 ``` text
 server {
    listen 80;
