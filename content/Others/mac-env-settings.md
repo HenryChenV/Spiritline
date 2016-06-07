@@ -145,3 +145,7 @@ brew install python
 
 ### MacVim
 比linux上的vim更好用，目前看来是这样的
+
+### haroopad
+markdown编辑器  
+[配置文件](/static/downloads/mac-env/Haroopad-2016-06-06-setting.json)

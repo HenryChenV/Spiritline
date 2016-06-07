@@ -21,3 +21,5 @@ Status: draft
 8. [python设计模式](https://github.com/faif/python-patterns) (2016-05-08)
 
 9. flask blinker源码
+10 更新下vim配置  
+    参考:<http://codingpy.com/article/vim-and-python-match-in-heaven/>
