@@ -8,6 +8,7 @@ __author__ = 'Henry Chen'
 
 import os
 import argparse
+import click
 from datetime import datetime
 
 new_md_template = '''Title:
@@ -36,7 +37,10 @@ def generate_new_md(filename, date, author, status):
         )
 
 
-def create_new_md(filename, date, author, status):
+@click.option('--filename', '-f', required=True, type=click.STRING,
+              help='filename of content file')
+@click.option('--date')
+def create_new(filename, date, author, status):
     if not filename.endswith('.md'):
         filename = '%s.md' % filename
 
@@ -50,7 +54,8 @@ def create_new_md(filename, date, author, status):
                 print 'success, %s was overwrited by new file.' % filename
                 break
             elif choice in ('', 'n', 'no'):
-                print 'new file was not created because %s was existed.' % filename
+                print ('new file was not created because %s'
+                       'was existed.') % filename
                 break
             else:
                 choice = raw_input('choise must in ("y", "n"): ')
@@ -80,8 +85,9 @@ def parse_args():
     if not slug:
         base_filename = os.path.basename(path)
         if not base_filename:
-            raise ValueError, "Invalid Path."
-        slug = base_filename.rstrip('.md') if base_filename.endswith('.md') else base_filename
+            raise ValueError("Invalid Path.")
+        slug = base_filename.rstrip(
+            '.md') if base_filename.endswith('.md') else base_filename
 
     return path, slug, status
 
@@ -91,4 +97,4 @@ if __name__ == '__main__':
     path, slug, status = parse_args()
     now = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
 
-    create_new_md(path, now, __author__, status)
+    create_new(path, now, __author__, status)
