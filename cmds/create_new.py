@@ -1,22 +1,22 @@
 #!/usr/bin/env python
-#-*- coding=utf-8 -*-
+# -*- coding=utf-8 -*-
 """
-create new md file
+    Create New Content File
+    ~~~~~~~~~~~~~~~~~~~~~~~
 """
+import os
+import click
+
 
 __author__ = 'Henry Chen'
 
-import os
-import argparse
-import click
-from datetime import datetime
 
-new_md_template = '''Title:
+new_md_template = '''Title: {title}
 Date: {date}
 Modified: {date}
-Tags:
+Tags: {tags}
 Slug: {slug}
-Authors: {author}
+Authors: {authors}
 Summary:
 Status: {status}
 
@@ -25,22 +25,68 @@ Status: {status}
 '''
 
 
-def generate_new_md(filename, date, author, status):
+def unicode2utf8(text):
+    if isinstance(text, unicode):
+        return text.encode('utf-8')
+    return text
+
+
+def generate_new_md(filename, title, date, tag, slug, author, status):
     with open(filename, 'w') as new_md_fp:
         new_md_fp.write(
             new_md_template.format(
-                date=date,
-                slug=slug,
-                author=author,
-                status=status
+                title=unicode2utf8(title),
+                date=unicode2utf8(date),
+                tags=unicode2utf8(tag),
+                slug=unicode2utf8(slug),
+                authors=unicode2utf8(author),
+                status=unicode2utf8(status),
             )
         )
 
 
+def current_time(ctx, args, value):
+    if not value:
+        from datetime import datetime
+        value = datetime.now().strftime('%Y-%m-%d %H:%M')
+    return value
+
+
+def tag_name_parser(ctx, args, value):
+    if value:
+        return ', '.join(value)
+    return ''
+
+
+def author_name_parser(ctx, args, value):
+    if value:
+        value = ', '.join(value)
+    else:
+        value = 'Henry Chen'
+    return value
+
+
+@click.command()
 @click.option('--filename', '-f', required=True, type=click.STRING,
               help='filename of content file')
-@click.option('--date')
-def create_new(filename, date, author, status):
+@click.option('--title', '-T', required=False, type=click.STRING, default='',
+              help='Title')
+@click.option('--date', '-d', required=False, type=click.STRING, default=None,
+              callback=current_time, help='Time to create it')
+@click.option('--tag', '-t', required=False, type=click.STRING,
+              multiple=True, default=[], callback=tag_name_parser,
+              help='Tag')
+@click.option('--slug', '-s', required=False, type=click.STRING,
+              default='', help='Uuid of content')
+@click.option('--author', '-A', required=False, type=click.STRING,
+              multiple=True, default=[],
+              callback=author_name_parser, help='Authors')
+@click.option('--status', '-S', required=False,
+              type=click.Choice(('draft', 'published')),
+              default='draft', help='Status')
+def create_new(filename, title, date, tag, slug, author, status):
+    """Create New Content
+    """
     if not filename.endswith('.md'):
         filename = '%s.md' % filename
 
@@ -50,7 +96,8 @@ def create_new(filename, date, author, status):
         choice = raw_input(prompt).lower()
         while 1:
             if choice in ('y', 'yes'):
-                generate_new_md(filename, date, author, status)
+                generate_new_md(
+                    filename, title, date, tag, slug, author, status)
                 print 'success, %s was overwrited by new file.' % filename
                 break
             elif choice in ('', 'n', 'no'):
@@ -60,41 +107,5 @@ def create_new(filename, date, author, status):
             else:
                 choice = raw_input('choise must in ("y", "n"): ')
     else:
-        generate_new_md(filename, date, author, status)
+        generate_new_md(filename, title, date, tag, slug, author, status)
         print 'success, %s was created' % filename
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Create New Markdown File.")
-
-    parser.add_argument('path',
-                        metavar='path',
-                        help="path to md file")
-    parser.add_argument('-s',
-#                        metavar='--status',
-                        dest='status',
-                        default='published',
-                        choices=('draft', 'published'),
-                        help='the status of post (draft or published)')
-    parser.add_argument('--slug',
-                        dest='slug',
-                        help='the slug of post.')
-
-    args = parser.parse_args()
-    path, slug, status = args.path, args.slug, args.status
-    if not slug:
-        base_filename = os.path.basename(path)
-        if not base_filename:
-            raise ValueError("Invalid Path.")
-        slug = base_filename.rstrip(
-            '.md') if base_filename.endswith('.md') else base_filename
-
-    return path, slug, status
-
-
-if __name__ == '__main__':
-
-    path, slug, status = parse_args()
-    now = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M')
-
-    create_new(path, now, __author__, status)

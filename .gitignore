@@ -5,3 +5,4 @@ output/*
 .ropeproject/
 .DS_Store
 tmp
+.env

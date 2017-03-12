@@ -13,6 +13,11 @@ def cmds():
 
 
 @click.command()
-def create_new():
+def hello():
+    """instruction
+    """
     pass
+# cmds.add_command(hello)
+
+
 cmds.add_command(create_new)
