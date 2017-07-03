@@ -66,8 +66,15 @@ def author_name_parser(ctx, args, value):
     return value
 
 
+def filename_parser(ctx, args, value):
+    if not value.endswith('.md'):
+        value += '.md'
+    return value
+
+
 @click.command()
 @click.option('--filename', '-f', required=True, type=click.STRING,
+              callback=filename_parser,
               help='filename of content file')
 @click.option('--title', '-T', required=False, type=click.STRING, default='',
               help='Title')
