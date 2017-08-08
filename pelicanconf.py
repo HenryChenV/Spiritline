@@ -7,12 +7,12 @@ SITENAME = u"Henry's SpiritLine"
 SITEURL = 'http://localhost:8000'
 DISQUS_SITENAME = "spiritline"
 
-#PATH = 'content'
+# PATH = 'content'
 
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = u'zh_CN'
-#DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M')
+# DEFAULT_DATE_FORMAT = ('%Y-%m-%d (%A) %H:%M')
 DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
 
 USE_FOLDER_AS_CATEGORY = True
@@ -34,7 +34,8 @@ WHIZ_LIB = (
     ('requests/Kenneth Reitz', 'https://github.com/kennethreitz'),
     ('Jinja2/Armin Ronacher', 'https://github.com/mitsuhiko'),
     ('小胡子哥/同龄/前端', 'http://www.barretlee.com/entry/'),
-    ('王垠', 'http://www.yinwang.org')
+    ('王垠', 'http://www.yinwang.org'),
+    ('何等成-阿里DBA', 'http://hedengcheng.com/'),
 )
 
 # Blogroll
@@ -78,7 +79,7 @@ DAY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/index.html'
 THEME = "themes/new-foundation-default-colours"
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ["plugins", ]
