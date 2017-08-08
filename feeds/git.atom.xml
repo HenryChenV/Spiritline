@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Henry's SpiritLine</title><link href="http://spiritline.threebook.cn/" rel="alternate"></link><link href="http://spiritline.threebook.cn/feeds/git.atom.xml" rel="self"></link><id>http://spiritline.threebook.cn/</id><updated>2016-06-11T22:59:00+08:00</updated><entry><title>从upstream拉代码</title><link href="http://spiritline.threebook.cn/pull-from-upstrea.html" rel="alternate"></link><updated>2016-06-11T22:59:00+08:00</updated><author><name>Henry Chen</name></author><id>tag:spiritline.threebook.cn,2016-06-11:pull-from-upstrea.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;从自定义的远程分支拉代码&lt;/p&gt;
+&lt;p&gt;```
+git remote -v
+git remote add upstream https://github.com/otheruser/repo.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+`````&lt;/p&gt;</summary><category term="git"></category></entry></feed>

@@ -1,0 +1,571 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Henry's SpiritLine</title>
+		<meta name="description" content="">
+		<meta name="author" content="henry">
+
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/foundation.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/hlcode.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/custom.css" />
+
+		<!-- GOOGLE WEB FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://spiritline.threebook.cn/theme/css/alt-fonts.css" />
+
+		<script src="http://spiritline.threebook.cn/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+		<link href="http://spiritline.threebook.cn/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Henry's SpiritLine Atom Feed" />
+
+<script>
+  (function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">Henry's&nbsp;SpiritLine</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="http://spiritline.threebook.cn">Home</a></li>
+						<li><label>Categories</label></li>
+							<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+							<li class="active"><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/front-end.html">Front-End</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/git.html">GIT</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/others.html">Others</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/python3.html">Python3</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+							<li ><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+
+						<li><label>Links</label></li>
+							<li><a href="https://github.com/HenryChenV">Github</a></li>
+							<li><a href="http://threebook.cn">ThreeBook</a></li>
+							<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+							<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+							<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+							<li><a href="http://python-china.org">Python China</a></li>
+
+						<li><label>Whiz Libiary</label></li>
+							<li><a href="http://www.ruanyifeng.com/blog/">阮一峰</a></li>
+							<li><a href="https://github.com/lepture">lepture</a></li>
+							<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+							<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+							<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+							<li><a href="http://www.barretlee.com/entry/">小胡子哥/同龄/前端</a></li>
+							<li><a href="http://www.yinwang.org">王垠</a></li>
+							<li><a href="http://hedengcheng.com/">何等成-阿里DBA</a></li>
+
+
+						<li><label>Monthly Archives</label></li>
+									<li><a href="/posts/2017/03/index.html">三月 2017 (1)</a></li>
+									<li><a href="/posts/2016/06/index.html">六月 2016 (1)</a></li>
+									<li><a href="/posts/2016/05/index.html">五月 2016 (2)</a></li>
+									<li><a href="/posts/2016/04/index.html">四月 2016 (3)</a></li>
+									<li><a href="/posts/2016/03/index.html">三月 2016 (2)</a></li>
+									<li><a href="/posts/2016/02/index.html">二月 2016 (8)</a></li>
+									<li><a href="/posts/2016/01/index.html">一月 2016 (5)</a></li>
+									<li><a href="/posts/2015/12/index.html">十二月 2015 (1)</a></li>
+
+						<li><label>Social</label></li>
+							<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="http://spiritline.threebook.cn/">Henry's SpiritLine</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li ><a href="http://spiritline.threebook.cn/category/english.html">English</a></li>
+								<li class="active"><a href="http://spiritline.threebook.cn/category/essay.html">Essay</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/front-end.html">Front-End</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/git.html">GIT</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/mysql.html">MySQL</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/others.html">Others</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/python.html">Python</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/python3.html">Python3</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/sysops.html">SysOPS</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/system.html">System</a></li>
+								<li ><a href="http://spiritline.threebook.cn/category/vim.html">VIM</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+    <h2><b>折腾博客</b></h2>
+    <hr/>
+    <h6>
+        <b>Date: </b>2016-01-30
+ 
+        <b>Tags: </b> 
+        <a href="http://spiritline.threebook.cn/tag/blog.html">blog</a>
+,         <a href="http://spiritline.threebook.cn/tag/fun.html">fun</a>
+,         <a href="http://spiritline.threebook.cn/tag/play.html">play</a>
+    </h6>
+    <hr/>
+	<div class="toc">
+<ul>
+<li><a href="#_1">博客类型</a></li>
+<li><a href="#_2">博客主题</a></li>
+<li><a href="#_3">告一段落吧</a></li>
+<li><a href="#todo">TODO</a></li>
+</ul>
+</div>
+<p>最近折腾博客折腾的优点走火入魔,从博客类型的挑选到博客主题的挑选，以及最后对样式的改动，一直在不停的纠结。  </p>
+<h1 id="_1">博客类型</h1>
+<p>因为买了个云服务器，所以总想物尽其用，刚开始总想找个复杂点的开源博客来用。看了很多开源软件，搜索范围是python写的博客，因为这样改起来方便。从国人写的到github上已经有setup.py的zinnia，感觉好看的不支持markdown，支持markdown的后台那叫一个丑，干脆直接干掉后台给个文件上传的得了。  </p>
+<p>后来看到<a href="http://blog.csdn.net/kamidox/article/details/40485773">一篇博客</a>中提到一个问题，就是个人博客需要数据库吗。刚看到这个问题时感觉很好笑，博客防到网上补救是给人看的吗，连数据库都没怎么让人家评论你的文章。看完了作者的文章后，我发现原来评论模块可以直接外接别人现成的东西，而这些在一个叫pelican 的项目中已经集成了。也就是说，如果你想搭个博客，评论模块可以完全不用自己写，可以使用别人的模块，按照人家提供的方式接入到人家的评论系统就可以，比如disqus。而自己的网站可以全都是静态文件，pelican是个静态文件生成器，可以根据markdown文档生成静态文件，然后直接放到web服务器中就ok了。至于评论模块，本来还需要自己在静态文件中接入，而这个功能pelican直接给我做好了，给它个disqus的参数就可以了。nice！  </p>
+<p>回到最开始的问题，博客需要数据库吗？可以需要，至少对于我个人来说，要求达到了，<br />
+第一，支持markdown，为什么，因为用markdown写简单带感，而且利于保存，不然哪天看自己那个有数据库的博客不爽，想重新找个的时候，迁移是个问题；<br />
+第二，可以评论，直接用别人的东西，自己基本不用开发和维护，注册账号就行，顶多个人家再打个广告。  </p>
+<p>仔细想想，其实这种方式更轻便，更有技术的感觉在里面。好处主要有三个。<br />
+第一，这种方式更加轻便，好维护，以后云服务器不要了可以使用github packge；<br />
+第二，因为所有文档的源头都是同一份md文档，而不是从A复制到B,再到C,修改A之后要再复制粘贴2遍；<br />
+第三，评论模块完全不用自己开发，爽！  </p>
+<h1 id="_2">博客主题</h1>
+<p>博客决定用静态文件生成器根据md文档生成，pelican提供了N多<a href="http://www.pelicanthemes.com">主题</a>，我选择的是foundation-default-colours,然后稍作修改自己用了。<br />
+对于主题，我的要求是，得有category，tag和按时间归档的功能，这几个功能这个主题都有，只是样式不敢恭维，我参考其他主题的样式做了小小的修改。我最喜欢的是这个主题中的tag的展示方式，很多主题中都是一个列表从上到下，这个是一行一行空格分割，紧凑排列的，这样可以展示更多的tag，方便查找。但我担心后来的tag会很多，所以改了下，加了个tag的展示页面。具体怎么折腾pelican的主题以及pelican本身，还得google和查看官方文档，这里说不全的。  </p>
+<h1 id="_3">告一段落吧</h1>
+<p>因为总是把心思花在折腾博客上，而且不在内容，有点买椟还珠的感觉。这并不是说博客的选择不重要，而是觉得内容才是更重要的。我做这一切着不过是想给自己一个喜欢的写博客的环境，如果环境都不喜欢，一看到就厌恶，这事情怎么进行下去。  <br />
+不过，现在也该满意了，功能也都有了。  <br />
+本来还想对样式再做进一步修改的，但觉得这样已经够了，太花了不好，容易分心，而且我也不擅长也不打算往前端发展。简洁美比较适合我。  <br />
+说不折腾，把重心移到内容上，结果还是折腾了，又这么晚，真心不想折腾了，这个主题还不错，不花哨，bootstrap流的主题都比较好看，但不一定适合我，我觉得这个主题笔记适合我。  <br />
+今天加上了百度代码的抓取，对归档那一块的样式做了些修改，自我感觉良好。但我不是做前端的啊。  <br />
+我控制不住啊～怎么办啊～  <br />
+又改了几下样式，主要是针对归档的，可以点击日期跳转到对应的年或者月的归档去。  <br />
+还有就是嫁了tag cloud。  <br />
+应该不会再折腾了吧。  <br />
+删光了配置中其他主题的配置，专心弄现在这个这个主题了。  <br />
+决定把这个主题给做稳了。    </p>
+<h1 id="todo">TODO</h1>
+<ol>
+<li>搜索功能，暂时不打算加，因为博客少，而且更主要的是想写给自己看，不然看了忘了不好。这个功能如果没现成的东西，做起来感觉还是有的麻烦的;</li>
+<li><del>分页，等博客多了再说，看到有些主题中有这个功能，到时候抄过来</del>(done,主题自带，只是之前没发现，已搞定)；  </li>
+<li>文章页面下一篇的功能，感觉别人不会用自己也不会用的功能，有了比鸡肋还不如，没用又有点难受，为什么要在todo里面，因为我犯贱啊。  </li>
+<li>tags页面样式修改，等tag足够多再说吧。  </li>
+<li><del>pelican将md转成markdown的时候，对有序列表没做转换，不知道怎么搞的</del>(done 写列表前记得空行)</li>
+<li><del>加回到顶部功能</del> (done)</li>
+</ol>
+	<hr/>
+    <h6>
+        Written by 
+        <a href="http://spiritline.threebook.cn/author/henry-chen.html">
+            Henry Chen
+        </a> 
+        in <a href="http://spiritline.threebook.cn/category/essay.html">Essay</a> 
+        on 2016-01-30,
+        last updated on 2016-02-08.
+    </h6>
+</article>
+
+<hr/>
+<div class="row">
+	<div class="small-12 columns">
+		<h3>Comments</h3>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'spiritline';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+								    <h5>Intro</h5>
+                                </a>
+								<ul class="side-nav">
+                                    <li>
+                                        <a href="#">Talk is cheap. Show me the code.--Linus Torvalds</a>
+                                    </li>
+								</ul>
+							</div>
+
+							<div class="panel">
+                                <a href="http://spiritline.threebook.cn/tags.html"><h5>Tags</h5></a>
+								<ul class="tag-cloud">
+                                    <li>
+                                        <a href="/tag/centos7.html" class="tag-4"> 
+                                            centos7 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/c.html" class="tag-4"> 
+                                            c 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/blog.html" class="tag-4"> 
+                                            blog 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/mac.html" class="tag-4"> 
+                                            mac 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/collections.html" class="tag-4"> 
+                                            collections 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/python3.html" class="tag-4"> 
+                                            python3 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/vim.html" class="tag-4"> 
+                                            vim 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/concat.html" class="tag-4"> 
+                                            concat 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/port.html" class="tag-4"> 
+                                            port 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/uwsgi.html" class="tag-4"> 
+                                            uwsgi 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/design-pattern.html" class="tag-4"> 
+                                            design-pattern 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/reading-notes.html" class="tag-1"> 
+                                            reading-notes 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/counter.html" class="tag-4"> 
+                                            counter 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/soft-link.html" class="tag-4"> 
+                                            soft-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/front-end.html" class="tag-4"> 
+                                            front-end 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/english.html" class="tag-4"> 
+                                            English 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/dream.html" class="tag-4"> 
+                                            dream 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/work.html" class="tag-4"> 
+                                            work 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/play.html" class="tag-4"> 
+                                            play 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/fun.html" class="tag-2"> 
+                                            fun 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/nginx.html" class="tag-4"> 
+                                            nginx 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/hard-link.html" class="tag-4"> 
+                                            hard-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/chaos.html" class="tag-4"> 
+                                            chaos 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/symbolic-link.html" class="tag-4"> 
+                                            symbolic-link 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/system.html" class="tag-3"> 
+                                            system 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/ted.html" class="tag-3"> 
+                                            ted 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/life.html" class="tag-4"> 
+                                            life 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/thinking.html" class="tag-4"> 
+                                            thinking 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/string.html" class="tag-4"> 
+                                            string 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/env.html" class="tag-4"> 
+                                            env 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/with.html" class="tag-4"> 
+                                            with 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/configparser.html" class="tag-4"> 
+                                            configparser 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/build-in-function.html" class="tag-3"> 
+                                            build-in-function 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/theme.html" class="tag-4"> 
+                                            theme 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/python.html" class="tag-1"> 
+                                            python 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/mysql.html" class="tag-2"> 
+                                            mysql 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tag/git.html" class="tag-4"> 
+                                            git 
+                                        </a>
+                                    </li>
+								</ul>
+							</div>
+
+                            <div class="panel">
+                                <a href="http://spiritline.threebook.cn/archives.html">
+                                    <h5>Archives (23)</h5>
+                                </a>
+                                <ul class="side-nav"> 
+                                    <li>
+                                        <a href="/posts/2017/index.html">
+                                            2017 (1)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2017/03/index.html">
+                                                    三月 2017 (1)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/posts/2017/index.html">
+                                            2016 (21)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2016/06/index.html">
+                                                    六月 2016 (1)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/05/index.html">
+                                                    五月 2016 (2)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/04/index.html">
+                                                    四月 2016 (3)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/03/index.html">
+                                                    三月 2016 (2)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/02/index.html">
+                                                    二月 2016 (8)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/posts/2016/01/index.html">
+                                                    一月 2016 (5)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/posts/2017/index.html">
+                                            2015 (1)
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <ul class="side-nav-2">
+                                            <li>
+                                                <a href="/posts/2015/12/index.html">
+                                                    十二月 2015 (1)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+							<div class="panel">
+								<h5>Whiz Libiary</h5>
+								<ul class="side-nav">
+									<li><a href="http://www.ruanyifeng.com/blog/">阮一峰</a></li>
+									<li><a href="https://github.com/lepture">lepture</a></li>
+									<li><a href="http://lilydjwg.is-programmer.com/">依云's Blog</a></li>
+									<li><a href="https://github.com/kennethreitz">requests/Kenneth Reitz</a></li>
+									<li><a href="https://github.com/mitsuhiko">Jinja2/Armin Ronacher</a></li>
+									<li><a href="http://www.barretlee.com/entry/">小胡子哥/同龄/前端</a></li>
+									<li><a href="http://www.yinwang.org">王垠</a></li>
+									<li><a href="http://hedengcheng.com/">何等成-阿里DBA</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://github.com/HenryChenV">Github</a></li>
+									<li><a href="http://threebook.cn">ThreeBook</a></li>
+									<li><a href="http://markdown-zh.readthedocs.org/en/latest/">Markdown Syntax</a></li>
+									<li><a href="http://pelican-docs-zh-cn.readthedocs.org/en/latest/">Pelican 中文文档</a></li>
+									<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0">廖雪峰 Python 2.7教程</a></li>
+									<li><a href="http://python-china.org">Python China</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="http://weibo.com/dulihandong">Weibo</a></li>
+								</ul>
+							</div>
+
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12 columns">
+							<hr/>
+							<p class="text-center">Contact me: Henry Chen, Email: <a href='mailto:chen_hanli@163.com'>chen_hanli@163.com</a>, QQ: 648667940</p>
+						</div>
+                        <aside class="medium-3 hide-for-small-only columns">
+                            <p class="text-left"><a href="#">Back to Top</a></p>
+                        </aside>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="http://spiritline.threebook.cn/theme/js/jquery.js"></script>
+		<script src="http://spiritline.threebook.cn/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

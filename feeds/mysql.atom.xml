@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Henry's SpiritLine</title><link href="http://spiritline.threebook.cn/" rel="alternate"></link><link href="http://spiritline.threebook.cn/feeds/mysql.atom.xml" rel="self"></link><id>http://spiritline.threebook.cn/</id><updated>2016-04-14T11:20:00+08:00</updated><entry><title>MySQL修改字段</title><link href="http://spiritline.threebook.cn/mysql-edit-column.html" rel="alternate"></link><updated>2016-04-14T11:20:00+08:00</updated><author><name>Henry Chen</name></author><id>tag:spiritline.threebook.cn,2016-04-14:mysql-edit-column.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;mysql 修改字段三种方式: &lt;br /&gt;
+又忘记了，简单记录下&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span class="k"&gt;alter&lt;/span&gt; &lt;span class="k"&gt;table&lt;/span&gt; &lt;span class="n"&gt;tablename&lt;/span&gt; &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="k"&gt;alter&lt;/span&gt; &lt;span class="k"&gt;alter&lt;/span&gt; &lt;span class="k"&gt;column&lt;/span&gt; &lt;span class="err"&gt;字段名&lt;/span&gt; &lt;span class="k"&gt;drop&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="k"&gt;or&lt;/span&gt; &lt;span class="k"&gt;alter&lt;/span&gt; &lt;span class="k"&gt;column&lt;/span&gt; &lt;span class="err"&gt;字段名&lt;/span&gt; &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="err"&gt;默认值&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="k"&gt;modify&lt;/span&gt; &lt;span class="k"&gt;column&lt;/span&gt; &lt;span class="err"&gt;字段名&lt;/span&gt; &lt;span class="err"&gt;类型&lt;/span&gt; &lt;span class="k"&gt;NOT&lt;/span&gt; &lt;span class="k"&gt;NULL&lt;/span&gt; &lt;span class="k"&gt;DEFAULT&lt;/span&gt; &lt;span class="n"&gt;xx&lt;/span&gt; &lt;span class="k"&gt;COMMENT&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;xxxx&amp;#39;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;change&lt;/span&gt; &lt;span class="k"&gt;column&lt;/span&gt; &lt;span class="err"&gt;老字段名&lt;/span&gt; &lt;span class="err"&gt;新字段名&lt;/span&gt; &lt;span class="err"&gt;类型&lt;/span&gt; &lt;span class="k"&gt;NOT&lt;/span&gt; &lt;span class="k"&gt;NULL&lt;/span&gt; &lt;span class="k"&gt;DEFAULT&lt;/span&gt; &lt;span class="n"&gt;xx&lt;/span&gt; &lt;span class="k"&gt;COMMENT&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;xxxx&amp;#39;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;alter 只能修改默认值&lt;/li&gt;
+&lt;li&gt;modify 不能修改字段名称，只能改字段类型&lt;/li&gt;
+&lt;li&gt;change 字段名称和类型都能改&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="mysql"></category></entry><entry><title>MySQL 删除重复数据</title><link href="http://spiritline.threebook.cn/delete-duplicate-records.html" rel="alternate"></link><updated>2016-02-18T11:54:00+08:00</updated><author><name>Henry Chen</name></author><id>tag:spiritline.threebook.cn,2016-02-18:delete-duplicate-records.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;删除重复数据&lt;br /&gt;
+image_info表中每个ImgUrl应该只对应一条记录,删除多余记录&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;image_info&lt;/span&gt; &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="k"&gt;where&lt;/span&gt; &lt;span class="k"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;3010&lt;/span&gt; &lt;/span&gt;
+&lt;span class="code-line"&gt;&lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;        &lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;            &lt;span class="k"&gt;select&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="n"&gt;image_info&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="k"&gt;group&lt;/span&gt; &lt;span class="k"&gt;by&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ImgUrl&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;            &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;/span&gt;
+&lt;span class="code-line"&gt;        &lt;span class="p"&gt;);&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="mysql"></category><category term="work"></category></entry></feed>
