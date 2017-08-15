@@ -1,0 +1,8 @@
+*.pyc
+run/*.pid
+run/run_soft
+output/*
+.ropeproject/
+.DS_Store
+tmp
+.env
