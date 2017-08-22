@@ -1,7 +1,7 @@
 Title: Keyword-only argument
 Date: 2017-03-12 16:27
 Modified: 2017-03-12 16:27
-Tags: python, python3
+Tags: python3
 Slug: keywork-only-argument
 Authors: Henry Chen
 Status: published
