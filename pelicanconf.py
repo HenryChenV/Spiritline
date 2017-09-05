@@ -76,14 +76,19 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 DAY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/index.html'
 
 # Theme
-THEME = "themes/new-foundation-default-colours"
+# THEME = "themes/new-foundation-default-colours"
+THEME = "themes/octopress"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["better_codeblock_line_numbering", "tag_cloud", "sitemap"]
+PLUGINS = ["better_codeblock_line_numbering",
+           "tag_cloud",
+           "sitemap",
+           "post_stats",
+           ]
 
 # plugin sitemap
 # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
@@ -165,3 +170,9 @@ TAG_CLOUD_BADGE = True
 
 # use archivelist as default main page
 DEFAULT_MAIN_PAGE_ARCHIVE = True
+
+
+# octopress
+SEARCH_BOX = True
+QR_CODE = True
+X_MIN_READ = False
