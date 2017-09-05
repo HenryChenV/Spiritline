@@ -92,7 +92,7 @@ include到steps中的StartStopStep(也就是需要看下start时候做了什么)
 参考: [gossip protocol](  https://en.wikipedia.org/wiki/Gossip_protocol)  
 
 ##### Tasks
-初始化consumer.task_consumer和consumer.qos  
+初始化consumer.task_consumer(`~:class:celery.app.amqp.AMQP.TaskConsumer`)和consumer.qos(`~:class:kombu.Common.QoS`)  
 在此之前还做了点跟strategy相关的事情, self.strategies是个dict,
 存储本地的task_name到task_message_handler的映射
 
