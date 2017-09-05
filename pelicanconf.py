@@ -162,3 +162,6 @@ TAG_CLOUD_SORTING = "random"
 # Optionnal setting : can bring **badges**,
 # which mean say : display the number of each tags present on all articles
 TAG_CLOUD_BADGE = True
+
+# use archivelist as default main page
+DEFAULT_MAIN_PAGE_ARCHIVE = True
