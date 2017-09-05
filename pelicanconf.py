@@ -108,7 +108,7 @@ STATIC_PATHS = ['static']
 DISPLAY_TAGS_ON_SIDEBAR = False
 DISPLAY_TAGS_INLINE = True
 DISPLAY_BREADCRUMBS = True
-SUMMARY_MAX_LENGTH = 3
+SUMMARY_MAX_LENGTH = 0
 
 # configurations of foundation-default-colours
 # the front page will show full articles instead of summaries + links to the

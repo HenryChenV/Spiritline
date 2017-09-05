@@ -5,7 +5,7 @@ Tags: celery, python
 Slug: python-celery-worker
 Summary: celery源码阅读笔记
 Authors: Henry Chen
-Status: published
+Status: draft
 
 
 [TOC]
