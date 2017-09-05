@@ -1,5 +1,5 @@
-Title: ERR_RESPONSE_HEADERS_MULTIPLE_CONTENT_DISPOSITION 
-Date: 2017-09-05 21:56
+Title: MULTIPLE_CONTENT_DISPOSITION 
+Date: 2017-09-05 21:56 
 Modified: 2017-09-05 21:56
 Tags: web
 Slug: err-response-headers-multiplue-content-disoposition
@@ -46,3 +46,9 @@ filename中包含逗号
 
 Content-Disposition: attachment; filename="filename.html"
 ```
+
+
+
+## 参考
+[StackOverflow: Duplicate headers received from server](https://stackoverflow.com/questions/13578428/duplicate-headers-received-from-server)  
+[MDN: content-Disposition](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Disposition)
