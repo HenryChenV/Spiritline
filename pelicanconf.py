@@ -174,5 +174,5 @@ DEFAULT_MAIN_PAGE_ARCHIVE = True
 
 # octopress
 SEARCH_BOX = True
-QR_CODE = True
+QR_CODE = False
 X_MIN_READ = False
