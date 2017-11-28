@@ -35,6 +35,8 @@ WHIZ_LIB = (
     ('Jinja2/Armin Ronacher', 'https://github.com/mitsuhiko'),
     ('小胡子哥/同龄/前端', 'http://www.barretlee.com/entry/'),
     ('王垠', 'http://www.yinwang.org'),
+    ('刘未鹏', 'http://mindhacks.cn/'),
+    ('酷壳', 'https://coolshell.cn//'),
 #    ('何等成-阿里DBA', 'http://hedengcheng.com/'),
 )
 
