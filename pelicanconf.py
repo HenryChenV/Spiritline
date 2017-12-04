@@ -37,7 +37,7 @@ WHIZ_LIB = (
     ('王垠', 'http://www.yinwang.org'),
     ('刘未鹏', 'http://mindhacks.cn/'),
     ('酷壳', 'https://coolshell.cn//'),
-#    ('何等成-阿里DBA', 'http://hedengcheng.com/'),
+    ('何等成-阿里DBA', 'http://hedengcheng.com/'),
 )
 
 # Blogroll
@@ -45,9 +45,11 @@ LINKS = (
     ('Github', 'https://github.com/HenryChenV'),
     ('ThreeBook', 'http://threebook.cn'),
     ('Markdown Syntax', 'http://markdown-zh.readthedocs.org/en/latest/'),
-    ('Pelican 中文文档', 'http://pelican-docs-zh-cn.readthedocs.org/en/latest/'),
-    ('廖雪峰 Python 2.7教程', 'http://www.liaoxuefeng.com' \
-     + '/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0'),
+    ('Pelican 中文文档',
+     'http://pelican-docs-zh-cn.readthedocs.org/en/latest/'),
+    ('廖雪峰 Python 2.7教程',
+     ('http://www.liaoxuefeng.com'
+      '/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000#0')),
     ('Python China', 'http://python-china.org')
 )
 
@@ -66,8 +68,8 @@ MD_EXTENSIONS = [
     "smarty",
     "wikilinks",
     "admonition",
-#    "nl2br",
-#    "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
+    # "nl2br",
+    # "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
     "codehilite(css_class=highlight,linenums=False)",
     "mdx_del_ins",
 ]
@@ -115,7 +117,7 @@ STATIC_PATHS = ['static']
 DISPLAY_TAGS_ON_SIDEBAR = False
 DISPLAY_TAGS_INLINE = True
 DISPLAY_BREADCRUMBS = True
-SUMMARY_MAX_LENGTH = 20
+SUMMARY_MAX_LENGTH = 7
 
 # configurations of foundation-default-colours
 # the front page will show full articles instead of summaries + links to the
@@ -154,7 +156,6 @@ ABOUTME = (
     ('QQ', '648667940'),
 )
 INTROS = (
-#    "The Story Of Me.",
     "Talk is cheap. Show me the code.--Linus Torvalds",
 )
 
