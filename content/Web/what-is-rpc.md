@@ -5,7 +5,7 @@ Tags: rpc
 Slug: what-is-rpc
 Summary: 对于RPC，写过代码的基本都听过，有些还用过，特别是在大公司。 但你真的明白这个是什么吗？本文就带你一起探究什么是RPC。
 Authors: Henry Chen
-Status: published
+Status: draft
 
 对于RPC，写过几年代码的基本都听过，有些还用过，特别是在大公司。  
 但你真的明白这个是什么吗？本文就带你一起探究什么是RPC。
