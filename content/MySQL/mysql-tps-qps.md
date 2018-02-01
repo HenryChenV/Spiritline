@@ -4,7 +4,7 @@ Modified: 2018-01-30 15:39
 Tags: mysql, tps, qps
 Slug: mysql-tps-qps
 Authors: Henry Chen
-Status: draft
+Status: published
 Summary: MySQL中对于TPS和QPS的定义及计算方式
 
 [TOC]
