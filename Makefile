@@ -62,6 +62,10 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
+install:
+	pip install -r requirements.txt
+	pip install git+git://github.com/aleray/mdx_del_ins.git
+
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
