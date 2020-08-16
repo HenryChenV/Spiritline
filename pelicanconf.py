@@ -60,7 +60,6 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 5
 MD_EXTENSIONS = [
-    "extra",
     "toc",
     "headerid",
     "meta",
@@ -70,7 +69,9 @@ MD_EXTENSIONS = [
     "admonition",
     # "nl2br",
     # "codehilite(guess_lang=False,pygments_style=emacs,noclasses=True)"
+    # "codehilite(css_class=highlight,linenums=False)",
     "codehilite(css_class=highlight,linenums=False)",
+    "extra",
     "mdx_del_ins",
 ]
 
